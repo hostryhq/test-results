@@ -1,0 +1,16 @@
+ok  	github.com/hostryhq/svc-admin/api	4.994s
+?   	github.com/hostryhq/svc-admin/cmd/admin	[no test files]
+?   	github.com/hostryhq/svc-admin/cmd/admin-double	[no test files]
+?   	github.com/hostryhq/svc-admin/cmd/genspec	[no test files]
+ok  	github.com/hostryhq/svc-admin/contract	5.540s
+ok  	github.com/hostryhq/svc-admin/double	1.333s
+ok  	github.com/hostryhq/svc-admin/internal/config	1.043s
+?   	github.com/hostryhq/svc-admin/internal/fakeup	[no test files]
+?   	github.com/hostryhq/svc-admin/internal/gen/admin	[no test files]
+?   	github.com/hostryhq/svc-admin/internal/gen/identity	[no test files]
+?   	github.com/hostryhq/svc-admin/internal/gen/tenancy	[no test files]
+?   	github.com/hostryhq/svc-admin/internal/specdata	[no test files]
+?   	github.com/hostryhq/svc-admin/internal/testenv	[no test files]
+ok  	github.com/hostryhq/svc-admin/repository	1.039s
+?   	github.com/hostryhq/svc-admin/service	[no test files]
+ok  	github.com/hostryhq/svc-admin/upstream	1.964s

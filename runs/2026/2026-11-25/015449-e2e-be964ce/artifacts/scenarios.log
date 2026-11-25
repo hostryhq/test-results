@@ -1,0 +1,74 @@
+=== RUN   TestScenario1_VendorBootstrapToOfflinePack
+=== RUN   TestScenario1_VendorBootstrapToOfflinePack/vendor_sign-in_through_svc-admin_sets_cookie_and_CSRF
+=== RUN   TestScenario1_VendorBootstrapToOfflinePack/organisation,_outlet_and_owner_invite_in_one_onboarding
+=== RUN   TestScenario1_VendorBootstrapToOfflinePack/owner_OTP_login_consumes_the_invitation
+--- PASS: TestScenario1_VendorBootstrapToOfflinePack (4.25s)
+    --- PASS: TestScenario1_VendorBootstrapToOfflinePack/vendor_sign-in_through_svc-admin_sets_cookie_and_CSRF (3.12s)
+    --- PASS: TestScenario1_VendorBootstrapToOfflinePack/organisation,_outlet_and_owner_invite_in_one_onboarding (0.14s)
+    --- PASS: TestScenario1_VendorBootstrapToOfflinePack/owner_OTP_login_consumes_the_invitation (0.72s)
+=== RUN   TestScenario1b_GSTINVerifyDeviceAndOfflinePack
+=== RUN   TestScenario1b_GSTINVerifyDeviceAndOfflinePack/GSTIN_verification_by_a_vendor_user_is_visible_to_the_tenant
+=== RUN   TestScenario1b_GSTINVerifyDeviceAndOfflinePack/device_registration_and_an_offline_pack_with_the_series_tenancy_issued
+--- PASS: TestScenario1b_GSTINVerifyDeviceAndOfflinePack (0.10s)
+    --- PASS: TestScenario1b_GSTINVerifyDeviceAndOfflinePack/GSTIN_verification_by_a_vendor_user_is_visible_to_the_tenant (0.03s)
+    --- PASS: TestScenario1b_GSTINVerifyDeviceAndOfflinePack/device_registration_and_an_offline_pack_with_the_series_tenancy_issued (0.07s)
+=== RUN   TestScenario2_CrossTenantIsolation
+=== RUN   TestScenario2_CrossTenantIsolation/tenancy_getBrand
+=== RUN   TestScenario2_CrossTenantIsolation/tenancy_getOutlet
+=== RUN   TestScenario2_CrossTenantIsolation/tenancy_updateOutlet
+=== RUN   TestScenario2_CrossTenantIsolation/tenancy_getTaxRegistration
+=== RUN   TestScenario2_CrossTenantIsolation/tenancy_updateTaxRegistration
+=== RUN   TestScenario2_CrossTenantIsolation/tenancy_closeTaxRegistration
+=== RUN   TestScenario2_CrossTenantIsolation/identity_getDevice
+=== RUN   TestScenario2_CrossTenantIsolation/identity_revokeDevice
+=== RUN   TestScenario2_CrossTenantIsolation/identity_getDeviceOfflinePack
+=== RUN   TestScenario2_CrossTenantIsolation/identity_getMember
+=== RUN   TestScenario2_CrossTenantIsolation/identity_getRole
+=== RUN   TestScenario2_CrossTenantIsolation/identity_deleteRole_is_an_idempotent_no-op_that_leaves_A's_role_alone
+=== RUN   TestScenario2_CrossTenantIsolation/lists_never_leak_the_other_tenant
+=== RUN   TestScenario2_CrossTenantIsolation/controls:_the_same_calls_on_B's_own_resources_succeed
+=== RUN   TestScenario2_CrossTenantIsolation/tenant_tokens_are_refused_on_vendor_routes
+=== RUN   TestScenario2_CrossTenantIsolation/A_is_unchanged_after_B's_write_attempts
+--- PASS: TestScenario2_CrossTenantIsolation (0.17s)
+    --- PASS: TestScenario2_CrossTenantIsolation/tenancy_getBrand (0.01s)
+    --- PASS: TestScenario2_CrossTenantIsolation/tenancy_getOutlet (0.00s)
+    --- PASS: TestScenario2_CrossTenantIsolation/tenancy_updateOutlet (0.01s)
+    --- PASS: TestScenario2_CrossTenantIsolation/tenancy_getTaxRegistration (0.00s)
+    --- PASS: TestScenario2_CrossTenantIsolation/tenancy_updateTaxRegistration (0.01s)
+    --- PASS: TestScenario2_CrossTenantIsolation/tenancy_closeTaxRegistration (0.01s)
+    --- PASS: TestScenario2_CrossTenantIsolation/identity_getDevice (0.01s)
+    --- PASS: TestScenario2_CrossTenantIsolation/identity_revokeDevice (0.01s)
+    --- PASS: TestScenario2_CrossTenantIsolation/identity_getDeviceOfflinePack (0.01s)
+    --- PASS: TestScenario2_CrossTenantIsolation/identity_getMember (0.00s)
+    --- PASS: TestScenario2_CrossTenantIsolation/identity_getRole (0.00s)
+    --- PASS: TestScenario2_CrossTenantIsolation/identity_deleteRole_is_an_idempotent_no-op_that_leaves_A's_role_alone (0.01s)
+    --- PASS: TestScenario2_CrossTenantIsolation/lists_never_leak_the_other_tenant (0.02s)
+    --- PASS: TestScenario2_CrossTenantIsolation/controls:_the_same_calls_on_B's_own_resources_succeed (0.03s)
+    --- PASS: TestScenario2_CrossTenantIsolation/tenant_tokens_are_refused_on_vendor_routes (0.00s)
+    --- PASS: TestScenario2_CrossTenantIsolation/A_is_unchanged_after_B's_write_attempts (0.03s)
+=== RUN   TestScenario3_TwoPersonApproval
+=== RUN   TestScenario3_TwoPersonApproval/two_young_accounts_cannot_form_a_pair:_filing_is_refused_second_approver_unavailable
+=== RUN   TestScenario3_TwoPersonApproval/seed_admin2's_account_age_to_8_days
+=== RUN   TestScenario3_TwoPersonApproval/admin1_files,_a_pending_approval_exists
+=== RUN   TestScenario3_TwoPersonApproval/the_requester_cannot_approve_their_own_request
+=== RUN   TestScenario3_TwoPersonApproval/an_approver_older_than_7_days_approves_with_a_fresh_TOTP
+=== RUN   TestScenario3_TwoPersonApproval/the_vendor_audit_log_records_the_approval
+--- PASS: TestScenario3_TwoPersonApproval (28.72s)
+    --- PASS: TestScenario3_TwoPersonApproval/two_young_accounts_cannot_form_a_pair:_filing_is_refused_second_approver_unavailable (0.01s)
+    --- PASS: TestScenario3_TwoPersonApproval/seed_admin2's_account_age_to_8_days (0.07s)
+    --- PASS: TestScenario3_TwoPersonApproval/admin1_files,_a_pending_approval_exists (0.02s)
+    --- PASS: TestScenario3_TwoPersonApproval/the_requester_cannot_approve_their_own_request (28.59s)
+    --- PASS: TestScenario3_TwoPersonApproval/an_approver_older_than_7_days_approves_with_a_fresh_TOTP (0.02s)
+    --- PASS: TestScenario3_TwoPersonApproval/the_vendor_audit_log_records_the_approval (0.01s)
+=== RUN   TestLoadLocalBaseline
+    zz_load_test.go:163: tenancy GET /v1/outlets/{id}             c=16 n=37432  err=0    rps=  2494.9 p50=   5.46ms p95=  13.12ms p99=  18.19ms
+    zz_load_test.go:163: tenancy GET /v1/document-series          c=16 n=29073  err=0    rps=  1936.8 p50=   6.62ms p95=  18.97ms p99=  31.32ms
+    zz_load_test.go:163: identity GET /v1/members/{id}            c=16 n=10639  err=0    rps=   708.4 p50=  19.81ms p95=  48.22ms p99=  67.89ms
+    zz_load_test.go:163: identity GET offline pack                c=8  n=2801   err=0    rps=   186.3 p50=  39.70ms p95=  79.14ms p99=  98.63ms
+    zz_load_test.go:163: admin GET /v1/sessions/current           c=16 n=132390 err=0    rps=  8825.0 p50=   0.70ms p95=   6.92ms p99=  11.86ms
+    zz_load_test.go:163: admin GET /v1/organisations              c=16 n=7823   err=0    rps=   520.3 p50=  26.15ms p95=  61.92ms p99=  81.15ms
+    zz_load_test.go:163: identity POST /v1/tokens/refresh         c=1  n=200    err=0    rps=    84.1 p50=  10.87ms p95=  19.35ms p99=  25.57ms
+    zz_load_test.go:163: identity POST /v1/otp-challenges         c=1  n=12     err=0    rps=    84.6 p50=  10.79ms p95=  15.39ms p99=  15.39ms
+--- PASS: TestLoadLocalBaseline (92.66s)
+PASS
+ok  	github.com/hostryhq/e2e-tests/e2e	134.868s

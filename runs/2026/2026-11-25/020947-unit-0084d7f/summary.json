@@ -1,0 +1,22 @@
+{
+  "suite": "unit",
+  "target": "svc-tenancy",
+  "commit": "0084d7fbdcf0d8ce469852fb49b71cc2ae40bea6",
+  "environment": "local",
+  "started_at": "2026-11-25T02:09:47Z",
+  "finished_at": "2026-11-25T02:09:54Z",
+  "passed": 4,
+  "failed": 0,
+  "skipped": 0,
+  "status": "pass",
+  "baseline_compared": false,
+  "regressions": [],
+  "triggered_by": "manual",
+  "commits": {
+    "svc-tenancy": "0084d7fbdcf0d8ce469852fb49b71cc2ae40bea6"
+  },
+  "command": "GOWORK=off go test -race -count=1 ./...  (module's own pins)",
+  "counting": "Go packages with tests (ok / FAIL); individual test counts were not collected (no -v/-json)",
+  "run_id": "020947-unit-0084d7f",
+  "report": "runs/2026/2026-11-25/020947-unit-0084d7f/report.md"
+}

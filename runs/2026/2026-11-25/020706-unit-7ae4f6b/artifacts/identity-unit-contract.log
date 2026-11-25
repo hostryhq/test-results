@@ -1,0 +1,16 @@
+ok  	github.com/hostryhq/svc-identity/api	2.182s
+?   	github.com/hostryhq/svc-identity/cmd/gen	[no test files]
+ok  	github.com/hostryhq/svc-identity/cmd/svc-identity	1.022s
+ok  	github.com/hostryhq/svc-identity/contract	53.346s
+?   	github.com/hostryhq/svc-identity/double	[no test files]
+?   	github.com/hostryhq/svc-identity/internal/compose	[no test files]
+?   	github.com/hostryhq/svc-identity/internal/crypto	[no test files]
+?   	github.com/hostryhq/svc-identity/internal/gen	[no test files]
+?   	github.com/hostryhq/svc-identity/internal/gen/tenancy	[no test files]
+?   	github.com/hostryhq/svc-identity/internal/nopsql	[no test files]
+?   	github.com/hostryhq/svc-identity/internal/tenancyclient	[no test files]
+?   	github.com/hostryhq/svc-identity/internal/token	[no test files]
+?   	github.com/hostryhq/svc-identity/repository	[no test files]
+ok  	github.com/hostryhq/svc-identity/repository/memory	1.027s
+?   	github.com/hostryhq/svc-identity/repository/postgres	[no test files]
+ok  	github.com/hostryhq/svc-identity/service	1.043s

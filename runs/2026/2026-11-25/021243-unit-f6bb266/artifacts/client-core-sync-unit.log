@@ -1,0 +1,12 @@
+
+ RUN  v5.1.1 /mnt/d/40_Projects/Ventures/hostry-repos/client-core-sync
+
+
+ Test Files  14 passed | 1 skipped (15)
+      Tests  115 passed | 1 skipped (116)
+   Start at  02:12:48
+   Duration  7.89s (tests 47%, import 39%, transform 10%, worker 4%)
+
+    Isolate  15 workers spawned · ~1.28s startup each (spawn + environment, per file)
+             at least ~1.47s faster with isolate: false — reuses workers across files instead of one per file
+

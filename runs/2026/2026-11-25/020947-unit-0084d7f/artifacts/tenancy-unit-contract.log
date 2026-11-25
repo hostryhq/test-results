@@ -1,0 +1,25 @@
+?   	github.com/hostryhq/svc-tenancy/api	[no test files]
+?   	github.com/hostryhq/svc-tenancy/cmd/tenancy	[no test files]
+ok  	github.com/hostryhq/svc-tenancy/double	3.682s
+?   	github.com/hostryhq/svc-tenancy/events	[no test files]
+?   	github.com/hostryhq/svc-tenancy/internal/app	[no test files]
+?   	github.com/hostryhq/svc-tenancy/internal/auditsink	[no test files]
+?   	github.com/hostryhq/svc-tenancy/internal/config	[no test files]
+?   	github.com/hostryhq/svc-tenancy/internal/contractenv	[no test files]
+?   	github.com/hostryhq/svc-tenancy/internal/gen	[no test files]
+ok  	github.com/hostryhq/svc-tenancy/internal/gstin	1.019s
+?   	github.com/hostryhq/svc-tenancy/internal/httpsuite	[no test files]
+?   	github.com/hostryhq/svc-tenancy/internal/itest	[no test files]
+?   	github.com/hostryhq/svc-tenancy/internal/model	[no test files]
+?   	github.com/hostryhq/svc-tenancy/internal/nulldb	[no test files]
+?   	github.com/hostryhq/svc-tenancy/internal/page	[no test files]
+?   	github.com/hostryhq/svc-tenancy/internal/pgtest	[no test files]
+?   	github.com/hostryhq/svc-tenancy/internal/scopecheck	[no test files]
+?   	github.com/hostryhq/svc-tenancy/internal/seed	[no test files]
+?   	github.com/hostryhq/svc-tenancy/internal/states	[no test files]
+?   	github.com/hostryhq/svc-tenancy/repository	[no test files]
+?   	github.com/hostryhq/svc-tenancy/repository/mem	[no test files]
+?   	github.com/hostryhq/svc-tenancy/repository/migrations	[no test files]
+ok  	github.com/hostryhq/svc-tenancy/repository/pg	1.129s
+ok  	github.com/hostryhq/svc-tenancy/service	1.152s
+?   	github.com/hostryhq/svc-tenancy/tools/gen	[no test files]

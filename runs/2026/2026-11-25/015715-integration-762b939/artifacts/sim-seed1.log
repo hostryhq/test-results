@@ -1,0 +1,8 @@
+2026/11/25 01:57:16 INFO restore epoch changed: opening new cloud origin from=genesis to=restore-1
+2026/11/25 01:57:16 INFO restore epoch handled from=genesis to=restore-1
+seed 1      ops=208   held=21  voided=3   flagged=14   rollbacks=1 keylosses=1 crashes=20 problems=0
+
+1 runs in 1s, 0 with divergences []
+ops=208 bills=8 held=21 voided=3 flagged=14 injected=20 | crashes=20 hub-restarts=12 hub-wipes=4 cloud-rollbacks=1 key-losses=1 partitions=23
+device syncs: via hub=66, hub failed=80, fell back to cloud=50
+network: calls=659 lost=3 lost-acks=11 duplicates=10 stale-replays=11

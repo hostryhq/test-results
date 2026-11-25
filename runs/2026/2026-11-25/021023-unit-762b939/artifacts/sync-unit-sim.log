@@ -1,0 +1,17 @@
+?   	github.com/hostryhq/svc-sync/api	[no test files]
+?   	github.com/hostryhq/svc-sync/cmd/devstack	[no test files]
+?   	github.com/hostryhq/svc-sync/cmd/gateway	[no test files]
+?   	github.com/hostryhq/svc-sync/cmd/hub	[no test files]
+?   	github.com/hostryhq/svc-sync/cmd/simulate	[no test files]
+?   	github.com/hostryhq/svc-sync/contract/suite	[no test files]
+?   	github.com/hostryhq/svc-sync/devepoch	[no test files]
+?   	github.com/hostryhq/svc-sync/directory	[no test files]
+ok  	github.com/hostryhq/svc-sync/double	1.546s
+ok  	github.com/hostryhq/svc-sync/engine	1.482s
+ok  	github.com/hostryhq/svc-sync/hub	4.216s
+?   	github.com/hostryhq/svc-sync/identitystub	[no test files]
+ok  	github.com/hostryhq/svc-sync/integration	1.028s
+?   	github.com/hostryhq/svc-sync/repository	[no test files]
+?   	github.com/hostryhq/svc-sync/service	[no test files]
+ok  	github.com/hostryhq/svc-sync/sim	136.085s
+ok  	github.com/hostryhq/svc-sync/syncproto	1.024s
