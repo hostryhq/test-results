@@ -2,6 +2,10 @@
 
 One line per run, newest first. Append-only: a wrong record is corrected by a new run entry that references it.
 
+- 2026-11-25 103555-e2e-c2fc640 | e2e | soak run 4: soak seed 4 print (run 4 (T10 scenario, no tenant-stream rewrite)) | partial | pass 15 fail 0 skip 1 | R11 soak T1-T13 | runs/2026/2026-11-25/103555-e2e-c2fc640/report.md
+- 2026-11-25 103356-e2e-c2fc640 | e2e | soak run 4: soak seed 3 settle (run 4 (T10 scenario, no tenant-stream rewrite)) | partial | pass 15 fail 0 skip 1 | R11 soak T1-T13 | runs/2026/2026-11-25/103356-e2e-c2fc640/report.md
+- 2026-11-25 103128-e2e-c2fc640 | e2e | soak run 4: soak seed 2 settle, cloud restore (run 4 (T10 scenario, no tenant-stream rewrite)) | pass | pass 16 fail 0 skip 0 | R11 soak T1-T13 | runs/2026/2026-11-25/103128-e2e-c2fc640/report.md
+- 2026-11-25 102831-e2e-c2fc640 | e2e | soak run 4: soak seed 1 settle (run 4 (T10 scenario, no tenant-stream rewrite)) | partial | pass 15 fail 0 skip 1 | R11 soak T1-T13 | runs/2026/2026-11-25/102831-e2e-c2fc640/report.md
 - 2026-11-25 094906-e2e-496d338 | e2e | soak soak seed 4 print (run 3: products do session, approval, brand, known_tenants; no harness workaround for them) | fail | pass 12 fail 2 skip 2 | R11 soak T1-T13 | runs/2026/2026-11-25/094906-e2e-496d338/report.md
 - 2026-11-25 094625-e2e-496d338 | e2e | soak soak seed 2 settle with a cloud restore (run 3: products do session, approval, brand, known_tenants; no harness workaround for them) | fail | pass 13 fail 2 skip 1 | R11 soak T1-T13 | runs/2026/2026-11-25/094625-e2e-496d338/report.md
 - 2026-11-25 094417-e2e-496d338 | e2e | soak soak seed 3 settle (run 3: products do session, approval, brand, known_tenants; no harness workaround for them) | fail | pass 12 fail 2 skip 2 | R11 soak T1-T13 | runs/2026/2026-11-25/094417-e2e-496d338/report.md

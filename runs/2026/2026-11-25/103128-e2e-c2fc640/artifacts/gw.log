@@ -1,0 +1,5 @@
+{"time":"2026-11-25T10:31:32.276198597Z","level":"INFO","msg":"hub up","wiped":false}
+soakgw up: cloud http://127.0.0.1:28104 hub http://127.0.0.1:28115 ctl http://127.0.0.1:28116 fixture /tmp/hostry-soak/w4/s2.fixture.json
+{"time":"2026-11-25T10:32:07.892114774Z","level":"INFO","msg":"hub up","wiped":false}
+{"time":"2026-11-25T10:32:11.624218101Z","level":"INFO","msg":"hub up","wiped":false}
+{"time":"2026-11-25T10:32:12.953459001Z","level":"INFO","msg":"hub up","wiped":true}

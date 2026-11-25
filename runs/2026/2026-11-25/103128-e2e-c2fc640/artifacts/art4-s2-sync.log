@@ -1,0 +1,10 @@
+{"time":"2026-11-25T10:31:26.26577367Z","level":"WARN","msg":"development only: the restore epoch is read from the service's own database (SYNC_PLATFORM_DSN is not set)"}
+{"time":"2026-11-25T10:31:26.393537643Z","level":"WARN","msg":"development only: repository: the database role is a superuser or has BYPASSRLS, so tenant isolation would not hold"}
+{"time":"2026-11-25T10:31:26.410361291Z","level":"INFO","msg":"outbox relay running","bus":"nats://127.0.0.1:14222"}
+{"time":"2026-11-25T10:31:26.410410672Z","level":"INFO","msg":"gateway listening (identity directory)","addr":"127.0.0.1:28104","epoch":"genesis"}
+{"time":"2026-11-25T10:33:13.14191617Z","level":"WARN","msg":"development only: the restore epoch is read from the service's own database (SYNC_PLATFORM_DSN is not set)"}
+{"time":"2026-11-25T10:33:13.157764581Z","level":"WARN","msg":"development only: repository: the database role is a superuser or has BYPASSRLS, so tenant isolation would not hold"}
+{"time":"2026-11-25T10:33:13.166208634Z","level":"INFO","msg":"restore epoch changed: opening new cloud origin","from":"genesis","to":"soak-restore-2"}
+{"time":"2026-11-25T10:33:13.166219054Z","level":"INFO","msg":"restore epoch handled","from":"genesis","to":"soak-restore-2"}
+{"time":"2026-11-25T10:33:13.170194823Z","level":"INFO","msg":"outbox relay running","bus":"nats://127.0.0.1:14222"}
+{"time":"2026-11-25T10:33:13.170224354Z","level":"INFO","msg":"gateway listening (identity directory)","addr":"127.0.0.1:28104","epoch":"soak-restore-2"}

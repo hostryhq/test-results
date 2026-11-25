@@ -1,0 +1,2 @@
+{"time":"2026-11-25T10:33:51.147930385Z","level":"INFO","msg":"billing listening","service":"billing","addr":"127.0.0.1:28107"}
+{"time":"2026-11-25T10:35:21.159707505Z","level":"INFO","msg":"Z revisions sealed","service":"billing","count":1}

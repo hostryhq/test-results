@@ -1,0 +1,4 @@
+{"time":"2026-11-25T10:33:54.22851772Z","level":"WARN","msg":"development only: the restore epoch is read from the service's own database (SYNC_PLATFORM_DSN is not set)"}
+{"time":"2026-11-25T10:33:54.330542838Z","level":"WARN","msg":"development only: repository: the database role is a superuser or has BYPASSRLS, so tenant isolation would not hold"}
+{"time":"2026-11-25T10:33:54.3421091Z","level":"INFO","msg":"outbox relay running","bus":"nats://127.0.0.1:14222"}
+{"time":"2026-11-25T10:33:54.342130751Z","level":"INFO","msg":"gateway listening (identity directory)","addr":"127.0.0.1:28104","epoch":"genesis"}
