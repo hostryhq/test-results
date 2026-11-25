@@ -1,0 +1,7 @@
+{"time":"2026-11-25T05:10:55.916392659Z","level":"WARN","msg":"development only: repository: the database role is a superuser or has BYPASSRLS, so tenant isolation would not hold"}
+{"time":"2026-11-25T05:10:55.957767493Z","level":"INFO","msg":"gateway up","epoch":"soak-restore-2"}
+{"time":"2026-11-25T05:10:55.961890673Z","level":"INFO","msg":"hub up","wiped":false}
+soakgw up: cloud http://127.0.0.1:28104 hub http://127.0.0.1:28115 ctl http://127.0.0.1:28116 fixture /tmp/hostry-soak/official/seed4.fixture.json
+{"time":"2026-11-25T05:11:14.95818535Z","level":"INFO","msg":"hub up","wiped":false}
+{"time":"2026-11-25T05:11:18.332210656Z","level":"INFO","msg":"hub up","wiped":false}
+{"time":"2026-11-25T05:11:19.522287629Z","level":"INFO","msg":"hub up","wiped":true}
