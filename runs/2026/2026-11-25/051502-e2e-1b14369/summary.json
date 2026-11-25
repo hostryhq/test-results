@@ -1,0 +1,97 @@
+{
+  "run_id": "051502-e2e-1b14369",
+  "suite": "e2e",
+  "target": "ADR-0014 R11 simulated trading-day soak (seed 1 settle; svc-billing AS-IS (as-is billing, unpatched))",
+  "commit": "1b14369c5e7d59e078b2397821fb303d7748a1db",
+  "environment": "local",
+  "started_at": "2026-11-25T05:15:02Z",
+  "finished_at": "2026-11-25T05:18:20Z",
+  "passed": 5,
+  "failed": 9,
+  "skipped": 2,
+  "status": "fail",
+  "baseline_compared": false,
+  "regressions": [],
+  "triggered_by": "manual",
+  "commits": {
+    "e2e-tests": "1b14369c5e7d59e078b2397821fb303d7748a1db",
+    "infra": {
+      "branch": "feat/phase2-local-dev",
+      "sha": "34eeec7"
+    },
+    "svc-identity": {
+      "branch": "feat/phase2-*",
+      "sha": "e28e23c"
+    },
+    "svc-tenancy": {
+      "branch": "feat/phase2-*",
+      "sha": "a5b3183"
+    },
+    "svc-admin": {
+      "branch": "feat/phase2-*",
+      "sha": "24444d3"
+    },
+    "svc-catalog": {
+      "branch": "feat/phase2-*",
+      "sha": "38e7bc1"
+    },
+    "svc-orders": {
+      "branch": "feat/phase2-*",
+      "sha": "50f041f"
+    },
+    "svc-billing": {
+      "branch": "feat/phase2-*",
+      "sha": "6f5cb60",
+      "note": "as pinned, no patch"
+    },
+    "svc-sync": {
+      "branch": "feat/phase2-*",
+      "sha": "e7c883e",
+      "note": "HOSTRY_SYNC_DIRECTORY=stub; its packages run inside soakgw, cmd/gateway stopped"
+    },
+    "client-core": {
+      "branch": "feat/phase2-integration",
+      "sha": "2db7e1e"
+    },
+    "app-restaurant": {
+      "branch": "feat/phase2-app",
+      "sha": "c370225"
+    },
+    "go-common": {
+      "branch": "feat/phase2-libs",
+      "sha": "a170f64"
+    },
+    "go-auth": {
+      "branch": "feat/phase2-auth",
+      "sha": "94f1970"
+    },
+    "api-specs-p2": {
+      "branch": "feat/phase2-specs",
+      "sha": "690d4d3",
+      "note": "services pin b153c62; head moved during the run; NATS accounts and digest entity metadata were read from this checkout"
+    }
+  },
+  "command": "soak/scripts/run-one.sh <work> asis 1 settle 0",
+  "seed": 1,
+  "number_at": "settle",
+  "counts_are": "claims (T1 to T13 plus X1 no duplicate ops, X2 erasure, X3 cloud restore); skipped = not run",
+  "claims": {
+    "T1": "fail",
+    "T2": "fail",
+    "T3": "fail",
+    "T4": "fail",
+    "T5": "pass",
+    "T6": "pass",
+    "T7": "fail",
+    "T8": "pass",
+    "T9": "fail",
+    "T10": "not_run",
+    "T11": "fail",
+    "T12": "fail",
+    "T13": "pass",
+    "X1": "pass",
+    "X3": "not_run",
+    "X2": "fail"
+  },
+  "report": "runs/2026/2026-11-25/051502-e2e-1b14369/report.md"
+}

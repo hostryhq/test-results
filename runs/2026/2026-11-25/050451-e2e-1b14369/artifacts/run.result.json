@@ -1,0 +1,546 @@
+{
+ "seed": 2,
+ "mode": "settle",
+ "date": "2026-11-24",
+ "tenant_id": "01a21117-a259-70a1-a65c-29c68ba4943b",
+ "outlet_id": "01a21117-a25d-71ec-a6f8-5413964d413a",
+ "wall_ms": 181540,
+ "day_wall_ms": 16429,
+ "reconnect_rounds": 4,
+ "reconnect_wall_ms": 2619,
+ "post_revision_rounds": 2,
+ "revision_count_seen": 0,
+ "claims": [
+  {
+   "id": "T1",
+   "name": "Convergence",
+   "status": "fail",
+   "evidence": [
+    "the cloud's outlet vector equals the devices' (origins compared)",
+    "converged in 4 rounds of 5 s virtual time (2619 ms wall) after the internet returned: within 60 s",
+    "scope: the nodes compared are the 8 headless devices (device state hash), the hub and cloud by vector; the real entity registry (client-core restaurantRegistry) is in use"
+   ],
+   "failures": [
+    "state hashes differ: [[\"A07\",\"eeec8d95\"],[\"A08\",\"81eb0c61\"],[\"A09\",\"af3f471c\"],[\"B3K\",\"af3f471c\"],[\"B4K\",\"af3f471c\"],[\"B5K\",\"af3f471c\"],[\"K9K\",\"64a9d06f\"],[\"K8K\",\"2e117455\"]]",
+    "version vectors differ between devices"
+   ]
+  },
+  {
+   "id": "T2",
+   "name": "Money",
+   "status": "fail",
+   "evidence": [
+    "device Z-report printed offline: Z/2026-11-24/A07 total 1267400 paise over 49 bills",
+    "billing close total (1267400) equals the device Z total",
+    "billing close bill_count 49 equals the device Z bill count",
+    "payment totals per tender equal: {\"cash\":681950,\"upi\":404200,\"card\":199950}",
+    "refunds equal (1)",
+    "credit notes equal (3)",
+    "day summary discounts = 22650",
+    "day summary round_off = 984"
+   ],
+   "failures": [
+    "billing holds 50 bills, device 51",
+    "bill total device 1300300 vs billing 1291900",
+    "day summary cgst: device 30233 vs billing 30033",
+    "day summary sgst: device 30233 vs billing 30033",
+    "day summary bill_count: device 51 vs billing 50",
+    "day summary total: device 1300300 vs billing 1291900"
+   ]
+  },
+  {
+   "id": "T3",
+   "name": "Numbers",
+   "status": "pass",
+   "evidence": [
+    "A07: no gap or duplicate in its series register",
+    "A08: no gap or duplicate in its series register",
+    "A09: no gap or duplicate in its series register",
+    "B3K: no gap or duplicate in its series register",
+    "B4K: no gap or duplicate in its series register",
+    "B5K: no gap or duplicate in its series register",
+    "K9K: no gap or duplicate in its series register",
+    "K8K: no gap or duplicate in its series register",
+    "54 document numbers, all unique across the outlet",
+    "series AAA/2627: 1..31 gapless",
+    "series AAC/2627: 1..17 gapless",
+    "series AAE/2627: 1..2 gapless",
+    "series AAB/2627: 1..3 gapless",
+    "billing register AAA/2627: count 31, last 31, gaps 0",
+    "billing register AAC/2627: count 17, last 17, gaps 0",
+    "billing register AAE/2627: count 2, last 2, gaps 0",
+    "billing register AAB/2627: count 3, last 3, gaps 0",
+    "billing reports no gap in the document register",
+    "no gap alert at the gateway",
+    "device day_close rows on A07: 2 (z numbers Z/2026-11-24/A07, Z/2026-11-24/A08); the contract has no series section on day_close, so the section-equals-register check is the register comparison above"
+   ],
+   "failures": []
+  },
+  {
+   "id": "T4",
+   "name": "Tax",
+   "status": "fail",
+   "evidence": [
+    "49 bills verified by billing (all but the seeded one)",
+    "seeded wrong-tax bill AAE/2627/000001 is flagged: verification {\"calc_v\":1,\"checked_at\":\"2026-11-25T05:05:22.142Z\",\"difference\":{\"amount_paise\":300,\"currency\":\"INR\"},\"ruleset_id\":\"rs-1\",\"status\":\"mismatch\"}",
+    "and billing kept it unchanged (total equals the device's)",
+    "tax_mismatch exceptions in billing: 1: bill:01a20d8e diff=300",
+    "every tax mismatch is the seeded one"
+   ],
+   "failures": [
+    "credit notes: {\"pending\":1,\"verified\":2}"
+   ]
+  },
+  {
+   "id": "T5",
+   "name": "Kitchen",
+   "status": "pass",
+   "evidence": [
+    "KITCHEN screen held every one of its 62 KOTs' tickets with the internet cut (none missing)",
+    "KITCHEN: every KOT line exactly once",
+    "BAR screen held every one of its 62 KOTs' tickets with the internet cut (none missing)",
+    "BAR: every KOT line exactly once",
+    "order to KDS on the LAN: 12 probes, p50 33 ms, p95 37 ms (≤ 1000 ms; each probe = push to hub + pull, driven back to back)",
+    "K9K holds all 46 KITCHEN KOTs after 3 hub stops (one with a wiped disk)",
+    "K8K holds all 18 BAR KOTs after 3 hub stops (one with a wiped disk)"
+   ],
+   "failures": []
+  },
+  {
+   "id": "T6",
+   "name": "Printing",
+   "status": "pass",
+   "evidence": [
+    "each of 50 bills has exactly one original print job",
+    "1 reprint(s) carry the duplicate banner",
+    "64 KOTs: each printed once as an original on its routed printer (stations that only show on the KDS print none; the handed-over and the stale blackout ticket print none)",
+    "scope: the fake printers capture the ESC/POS bytes of the bill printer and the kitchen printer per device; counts are of decoded text matches on the document number"
+   ],
+   "failures": []
+  },
+  {
+   "id": "T7",
+   "name": "Nothing silent",
+   "status": "fail",
+   "evidence": [
+    "every node shows the same 1 detector finding(s): overpayment:01a20ccc-8620-70",
+    "seeded double payment: made; overpayment finding still open after the refund: 1; net paid after refund 15800",
+    "the double payment was seeded",
+    "line-on-two-bills race appears in billing exceptions: line_on_two_bills, two_bills_one_check",
+    "the race is closed by a credit note op",
+    "the double payment is closed by a refund op",
+    "ops shown as needing attention equal the quarantined or voided: A07 1=1, A08 1=1, K9K 19=19, K8K 6=6"
+   ],
+   "failures": [
+    "the seeded double payment does not appear in billing exceptions (no payment-related exception kind)"
+   ]
+  },
+  {
+   "id": "T8",
+   "name": "Day close",
+   "status": "pass",
+   "evidence": [
+    "day close was refused while an order line was unresolved (day_blocked)",
+    "day close succeeded offline after resolution: Z/2026-11-24/A07",
+    "orders exceptions around close: [[\"unresolved_line_at_close/resolved\",2]]"
+   ],
+   "failures": []
+  },
+  {
+   "id": "T9",
+   "name": "Projections",
+   "status": "fail",
+   "evidence": [
+    "before the cloud rollback, orders: 1 entity difference(s): order_line_modifier: device has 7 rows, service lists none; after it the service state_hash is 4c314b027da0…",
+    "before the cloud rollback, billing: 3 entity difference(s): bill: rows device 51 vs service 50 | bill_line: rows device 82 vs service 81 | bill_tax_line: rows device 58 vs service 57; after it the service state_hash is 42b8b17785fd…",
+    "the bus reset was not run in any seed: no bus-reset tool exists in go-common or infra (the outbox documentation names hostry-bus-reset)"
+   ],
+   "failures": [
+    "orders: state_hash differs; 1 entity differ: order_line_modifier: device has 7 rows, service lists none",
+    "billing: state_hash differs; 3 entities differ: bill: rows device 51 vs service 50 | bill_line: rows device 82 vs service 81 | bill_tax_line: rows device 58 vs service 57"
+   ]
+  },
+  {
+   "id": "T10",
+   "name": "Trading is never gated",
+   "status": "not_run",
+   "evidence": [],
+   "failures": [
+    "not exercisable on this build: app-restaurant has no entitlement snapshot or subscription check (grep: none); the nearest condition, an expired offline pack, only refuses new PIN sign-ins in StubIdentity and was not run"
+   ]
+  },
+  {
+   "id": "T11",
+   "name": "Business day",
+   "status": "fail",
+   "evidence": [
+    "A07: one business_day for 2026-11-24",
+    "A08: one business_day for 2026-11-24",
+    "A09: one business_day for 2026-11-24",
+    "B3K: one business_day for 2026-11-24",
+    "B4K: one business_day for 2026-11-24",
+    "B5K: one business_day for 2026-11-24",
+    "K9K: one business_day for 2026-11-24",
+    "K8K: one business_day for 2026-11-24",
+    "the original Z totals on the device are unchanged after the late bills arrived",
+    "revision numbers equal on every node: []",
+    "A08 closed the same date while partitioned from A07: Z numbers Z/2026-11-24/A07 and Z/2026-11-24/A08; billing day status closed, late_document_count 0, revision_count 0"
+   ],
+   "failures": [
+    "billing revisions 0 vs device 0: the late bill after close (AAE/2627/000002) produced no Z revision at billing within the wait",
+    "original Z 1267400 + revisions 0 != all bills 1300300 (late bills on A09 total 32900)"
+   ]
+  },
+  {
+   "id": "T12",
+   "name": "Numbering trigger",
+   "status": "pass",
+   "evidence": [
+    "2 check(s) were presented (pre-bill) during the day",
+    "numbers consumed (53) equal documents that exist (53): presenting consumed none",
+    "every presented check ended billed, cancelled with approval or carried over"
+   ],
+   "failures": []
+  },
+  {
+   "id": "T13",
+   "name": "Blackout",
+   "status": "pass",
+   "evidence": [
+    "the KDS station lists the ticket handed over by hand and the stale one as late tickets: [\"handover\",\"stale\"]",
+    "the recent blackout ticket printed once on the station",
+    "no handed-over and no stale KOT printed as an original after power returned",
+    "bills finalised on the battery counter in the blackout keep their series (AAC: gapless per T3) and their original print exists (T6)",
+    "nodes converged 2 rounds (5 s virtual each, 759 ms wall) after the LAN returned: within 60 s",
+    "the paper page typed twice (2 entries) is 1 bill: MB1/2627/000007",
+    "the handover is recorded and listed on the KDS side"
+   ],
+   "failures": []
+  },
+  {
+   "id": "X1",
+   "name": "No duplicate ops after lost acks",
+   "status": "pass",
+   "evidence": [
+    "A07: 175 own ops, gateway stores 175, contiguous from 1",
+    "A08: 101 own ops, gateway stores 101, contiguous from 1",
+    "A09: 12 own ops, gateway stores 12, contiguous from 1",
+    "B3K: 32 own ops, gateway stores 32, contiguous from 1",
+    "B4K: 25 own ops, gateway stores 25, contiguous from 1",
+    "B5K: 16 own ops, gateway stores 16, contiguous from 1",
+    "K9K: 19 own ops, gateway stores 19, contiguous from 1",
+    "K8K: 6 own ops, gateway stores 6, contiguous from 1",
+    "1 push answer(s) were lost after the server applied them; 3 hub stop(s) incl. 1 disk wipe; 1 device restart(s)",
+    "394 outbox events, all distinct ids"
+   ],
+   "failures": []
+  },
+  {
+   "id": "X3",
+   "name": "Cloud restore epoch",
+   "status": "pass",
+   "evidence": [
+    "cloud ops: 388 at backup, 394 before the restore, 388 right after it, 394 after the nodes re-offered",
+    "the restore really rolled the cloud back (it lost ops)",
+    "the cloud holds every op again after 3 rounds (1685 ms wall)",
+    "the hub's round reported the epoch change",
+    "no device's state changed through the rollback and the re-offer (state hash equal before and after, per device)"
+   ],
+   "failures": []
+  },
+  {
+   "id": "X2",
+   "name": "Erasure of a customer's details",
+   "status": "fail",
+   "evidence": [
+    "erasable side tables (sync_pii) holding the values before: billing 1, orders 1",
+    "before erasure: details present in billing false, orders false, device A07 true, gateway op_pii rows 2",
+    "customer details were present somewhere before the erasure (the test is meaningful)",
+    "gateway erasure issued for 2 op(s) (via Gateway.ErasePII: no HTTP route exists, see findings)",
+    "billing no longer returns the name or GSTIN",
+    "orders no longer returns the name or GSTIN",
+    "device A07 holds 0 pii_erase record(s); [\"cloud-genesis\",\"cloud-soak-restore-2\"] cloud origins in its vector",
+    "the gateway's op_pii rows of those ops are gone",
+    "the copy on the internal queue ages out within 7 days (ADR-0014 A2.1 item 7): not waited for, stated in the erasure promise"
+   ],
+   "failures": [
+    "devices still holding the details: A07, A08, A09, B3K, B4K, B5K, K9K, K8K (fields: check.customer_gstin, bill.customer_gstin)",
+    "side tables still hold the values after the erasure: billing 0, orders 1"
+   ]
+  }
+ ],
+ "gateway_ops": [
+  {
+   "cloud_origin": false,
+   "status": "accepted",
+   "reason": "",
+   "n": 364
+  },
+  {
+   "cloud_origin": false,
+   "status": "quarantined",
+   "reason": "actor_unknown",
+   "n": 25
+  },
+  {
+   "cloud_origin": false,
+   "status": "quarantined",
+   "reason": "foreign_series",
+   "n": 2
+  },
+  {
+   "cloud_origin": true,
+   "status": "accepted",
+   "reason": "",
+   "n": 5
+  }
+ ],
+ "parked": {
+  "billing": "0",
+  "orders": "0"
+ },
+ "facts": {
+  "steps_failed": [],
+  "steps_total": 106,
+  "events": [
+   "07:35:00Z cast up: 3 counters, 3 captains, 2 KDS, one hub; morning: internet up for the configuration push",
+   "07:35:20Z internet cut for the whole trading day",
+   "07:35:20Z configuration published: 7/7 device intents, 3/3 cloud emits",
+   "07:56:20Z first bill seen",
+   "10:04:20Z BLACKOUT: LAN, hub and the A07 counter are off",
+   "10:35:20Z POWER RETURNS",
+   "12:35:40Z A09 isolated; A07 and A08 partitioned from each other for the close",
+   "12:35:40Z wrong-tax bill AAE/2627/000001 recorded; its print failed under the harness's doctored view (not_found: bill 01a20d8e-0160-7006-8e6a-ef7c8dae6a8c); printing it now"
+  ],
+  "z": {
+   "zNumber": "Z/2026-11-24/A07",
+   "totalPaise": 1267400,
+   "billCount": 49
+  },
+  "z2": {
+   "zNumber": "Z/2026-11-24/A08",
+   "totalPaise": 1267400,
+   "billCount": 49
+  },
+  "hubKills": 3,
+  "hubWipes": 1,
+  "restarts": [
+   "B4K"
+  ],
+  "lostAcks": 1,
+  "bills_by_device": {
+   "A07": 28,
+   "A08": 16,
+   "A09": 2
+  },
+  "approvals": 2,
+  "config": {
+   "device_ops": [
+    {
+     "intent": "floor.manage",
+     "ok": true
+    },
+    {
+     "intent": "menu.category.edit",
+     "ok": true
+    },
+    {
+     "intent": "menu.item.edit",
+     "ok": true
+    },
+    {
+     "intent": "menu.modifier.edit",
+     "ok": true
+    },
+    {
+     "intent": "menu.price.set",
+     "ok": true
+    },
+    {
+     "intent": "settings.reason.edit",
+     "ok": true
+    },
+    {
+     "intent": "settings.outlet.edit",
+     "ok": true
+    }
+   ],
+   "emits": [
+    {
+     "intent": "settings.tax_profile.set",
+     "status": 200,
+     "body": "{\"ops\":[{\"key\":\"soak-config-settings.tax_profile.set\",\"origin\":\"cloud-genesis\",\"stream\":\"outlet:01a21117-a25d-71ec-a6f8-5413964d413a\",\"seq\":1,\"replayed\":false}]}"
+    },
+    {
+     "intent": "settings.numbering.set",
+     "status": 200,
+     "body": "{\"ops\":[{\"key\":\"soak-config-settings.numbering.set\",\"origin\":\"cloud-genesis\",\"stream\":\"outlet:01a21117-a25d-71ec-a6f8-5413964d413a\",\"seq\":2,\"replayed\":false}]}"
+    },
+    {
+     "intent": "tax.rule_set.publish",
+     "status": 200,
+     "body": "{\"ops\":[{\"key\":\"soak-config-tax.rule_set.publish\",\"origin\":\"cloud-genesis\",\"stream\":\"tenant:01a21117-a259-70a1-a65c-29c68ba4943b\",\"seq\":1,\"replayed\":false}]}"
+    }
+   ]
+  },
+  "kot_latency_ms": [
+   28.41809900000044,
+   32.43236100000013,
+   32.616086999999425,
+   31.116643999999724,
+   32.76441599999998,
+   33.24785399999928,
+   34.543634999999995,
+   32.7687219999998,
+   33.5591800000002,
+   35.34282299999995,
+   37.380919999999605,
+   34.7730590000001
+  ],
+  "blackout": {
+   "bookEntriesMade": 2,
+   "given": "01a20d03-74a0-7002-bbb4-df16f49a8612",
+   "stale": "01a20d0c-9c60-7001-9fe6-fae01812641e",
+   "recent": "01a20d1e-ebe0-7001-b0cc-59cb1d4c9279",
+   "bookNumber": "MB1/2627/000007",
+   "settleRounds": 2,
+   "settleWallMs": 759
+  },
+  "late_bill": {
+   "billId": "01a20da1-3b40-7006-a8b8-7eddc16d50d4",
+   "number": "AAE/2627/000002"
+  },
+  "wrong_tax": {
+   "billId": "01a20d8e-0160-7006-8e6a-ef7c8dae6a8c",
+   "number": "AAE/2627/000001"
+  }
+ },
+ "extra": {
+  "exceptions": {
+   "billing": [
+    "tax_mismatch/high/open/bill",
+    "late_document/info/open/business_day",
+    "line_on_two_bills/high/open/bill",
+    "two_bills_one_check/warning/open/check"
+   ],
+   "orders_counts": {
+    "unresolved_line_at_close/resolved": 2,
+    "late_ticket/resolved": 40,
+    "late_ticket/open": 22
+   }
+  },
+  "revisions": [],
+  "stateHash": "eeec8d95008d05de3aa21e08b2d01d329317977598bdd829650692cec8275248",
+  "t2": {
+   "devTotal": 1300300,
+   "z": {
+    "zNumber": "Z/2026-11-24/A07",
+    "totalPaise": 1267400,
+    "billCount": 49
+   },
+   "billingClose": {
+    "amount_paise": 1267400,
+    "currency": "INR"
+   },
+   "summaryTotal": {
+    "amount_paise": 1291900,
+    "currency": "INR"
+   }
+  },
+  "verification": {
+   "bills": {
+    "verified": 49,
+    "mismatch": 1
+   },
+   "credit_notes": {
+    "pending": 1,
+    "verified": 2
+   }
+  },
+  "printing": {
+   "billPrints": 59,
+   "kotPrints": 44
+  },
+  "attention": [
+   {
+    "dev": "A07",
+    "attention": 1,
+    "gateway": 1
+   },
+   {
+    "dev": "A08",
+    "attention": 1,
+    "gateway": 1
+   },
+   {
+    "dev": "A09",
+    "attention": 0,
+    "gateway": 0
+   },
+   {
+    "dev": "B3K",
+    "attention": 0,
+    "gateway": 0
+   },
+   {
+    "dev": "B4K",
+    "attention": 0,
+    "gateway": 0
+   },
+   {
+    "dev": "B5K",
+    "attention": 0,
+    "gateway": 0
+   },
+   {
+    "dev": "K9K",
+    "attention": 19,
+    "gateway": 19
+   },
+   {
+    "dev": "K8K",
+    "attention": 6,
+    "gateway": 6
+   }
+  ],
+  "restore": {
+   "ops_at_backup": 388,
+   "ops_before_restore": 394,
+   "hashes_before": {
+    "A07": "eeec8d95008d05de3aa21e08b2d01d329317977598bdd829650692cec8275248",
+    "A08": "81eb0c61cecdcaa1cac6d4c573bc3ccdf69020321f7a41bd70eb31ea02a6c99e",
+    "A09": "af3f471c2f7f73a9be00deecb4ffb66f6a9cf66e3433d9e07c9822dde15193c1",
+    "B3K": "af3f471c2f7f73a9be00deecb4ffb66f6a9cf66e3433d9e07c9822dde15193c1",
+    "B4K": "af3f471c2f7f73a9be00deecb4ffb66f6a9cf66e3433d9e07c9822dde15193c1",
+    "B5K": "af3f471c2f7f73a9be00deecb4ffb66f6a9cf66e3433d9e07c9822dde15193c1",
+    "K9K": "64a9d06fa5870bdecb3417ab51db0dac6177877c87b1cfeca05112ab61ba8790",
+    "K8K": "2e1174554ad9b40eb7eafe8aec0a6c2c97b5ae6976a6c94d696f815bcf06da54"
+   },
+   "ops_after_restore": 388,
+   "ops_after_reoffer": 394,
+   "hashes_after": {
+    "A07": "eeec8d95008d05de3aa21e08b2d01d329317977598bdd829650692cec8275248",
+    "A08": "81eb0c61cecdcaa1cac6d4c573bc3ccdf69020321f7a41bd70eb31ea02a6c99e",
+    "A09": "af3f471c2f7f73a9be00deecb4ffb66f6a9cf66e3433d9e07c9822dde15193c1",
+    "B3K": "af3f471c2f7f73a9be00deecb4ffb66f6a9cf66e3433d9e07c9822dde15193c1",
+    "B4K": "af3f471c2f7f73a9be00deecb4ffb66f6a9cf66e3433d9e07c9822dde15193c1",
+    "B5K": "af3f471c2f7f73a9be00deecb4ffb66f6a9cf66e3433d9e07c9822dde15193c1",
+    "K9K": "64a9d06fa5870bdecb3417ab51db0dac6177877c87b1cfeca05112ab61ba8790",
+    "K8K": "2e1174554ad9b40eb7eafe8aec0a6c2c97b5ae6976a6c94d696f815bcf06da54"
+   },
+   "settle_rounds": 3,
+   "reoffer_wall_ms": 1685,
+   "hub_epoch_changed": true
+  },
+  "digest_pre_restore": {
+   "orders": [
+    "order_line_modifier: device has 7 rows, service lists none"
+   ],
+   "billing": [
+    "bill: rows device 51 vs service 50",
+    "bill_line: rows device 82 vs service 81",
+    "bill_tax_line: rows device 58 vs service 57"
+   ]
+  }
+ }
+}

@@ -2,6 +2,17 @@
 
 One line per run, newest first. Append-only: a wrong record is corrected by a new run entry that references it.
 
+- 2026-11-25 075932-e2e-dae9238 | e2e | soak soak seed 1 settle (VARIANT cashier role as the app templates have it: SOAK_CASHIER_STRICT=1 (override permissions held by the manager only)) | fail | pass 5 fail 9 skip 2 | R11 soak T1-T13 | runs/2026/2026-11-25/075932-e2e-dae9238/report.md
+- 2026-11-25 075616-e2e-dae9238 | e2e | soak soak seed 1 settle (VARIANT app as it is: SOAK_NO_SESSION_RECORD=1 (no session or approval record, no device session for the KDS)) | fail | pass 5 fail 9 skip 2 | R11 soak T1-T13 | runs/2026/2026-11-25/075616-e2e-dae9238/report.md
+- 2026-11-25 075401-e2e-8e8478a | e2e | soak soak seed 4 print (real identity directory, harness additions listed in the report) | fail | pass 10 fail 4 skip 2 | R11 soak T1-T13 | runs/2026/2026-11-25/075401-e2e-8e8478a/report.md
+- 2026-11-25 075150-e2e-8e8478a | e2e | soak soak seed 2 settle with a cloud restore (real identity directory, harness additions listed in the report) | fail | pass 11 fail 4 skip 1 | R11 soak T1-T13 | runs/2026/2026-11-25/075150-e2e-8e8478a/report.md
+- 2026-11-25 074703-e2e-8246ae3 | e2e | soak soak seed 3 settle (real identity directory, harness additions listed in the report) | fail | pass 10 fail 4 skip 2 | R11 soak T1-T13 | runs/2026/2026-11-25/074703-e2e-8246ae3/report.md
+- 2026-11-25 074244-e2e-8246ae3 | e2e | soak soak seed 1 settle (real identity directory, harness additions listed in the report) | fail | pass 10 fail 4 skip 2 | R11 soak T1-T13 | runs/2026/2026-11-25/074244-e2e-8246ae3/report.md
+- 2026-11-25 051502-e2e-1b14369 | e2e | soak seed 1 settle (svc-billing AS-IS (as-is billing, unpatched)) | fail | pass 5 fail 9 skip 2 | R11 soak T1-T13 | runs/2026/2026-11-25/051502-e2e-1b14369/report.md
+- 2026-11-25 051055-e2e-1b14369 | e2e | soak seed 4 print (svc-billing patched with one line (go build overlay)) | fail | pass 6 fail 8 skip 2 | R11 soak T1-T13 | runs/2026/2026-11-25/051055-e2e-1b14369/report.md
+- 2026-11-25 050803-e2e-1b14369 | e2e | soak seed 3 settle (svc-billing patched with one line (go build overlay)) | fail | pass 7 fail 7 skip 2 | R11 soak T1-T13 | runs/2026/2026-11-25/050803-e2e-1b14369/report.md
+- 2026-11-25 050451-e2e-1b14369 | e2e | soak seed 2 settle with cloud restore (svc-billing patched with one line (go build overlay)) | fail | pass 8 fail 7 skip 1 | R11 soak T1-T13 | runs/2026/2026-11-25/050451-e2e-1b14369/report.md
+- 2026-11-25 050139-e2e-1b14369 | e2e | soak seed 1 settle (svc-billing patched with one line (go build overlay)) | fail | pass 7 fail 7 skip 2 | R11 soak T1-T13 | runs/2026/2026-11-25/050139-e2e-1b14369/report.md
 - 2026-11-25 021243-unit-f6bb266 | unit | client-core (sync, worktree client-core-sync) | pass | pass 115 fail 0 skip 1 | client-core-sync unit | runs/2026/2026-11-25/021243-unit-f6bb266/report.md
 - 2026-11-25 021023-unit-762b939 | unit | svc-sync | pass | pass 6 fail 0 skip 0 | sync-unit-sim | runs/2026/2026-11-25/021023-unit-762b939/report.md
 - 2026-11-25 021008-unit-67a42d3 | unit | svc-admin | pass | pass 6 fail 0 skip 0 | admin-unit-contract | runs/2026/2026-11-25/021008-unit-67a42d3/report.md

@@ -1,0 +1,12 @@
+{"time":"2026-11-25T07:56:12.779760369Z","level":"INFO","msg":"orders listening","service":"orders","addr":"127.0.0.1:28106","environment":"dev"}
+{"time":"2026-11-25T07:56:13.714984104Z","level":"INFO","msg":"request","service":"orders","method":"GET","path":"/healthz","status":200,"took":75552,"request_id":"01a211b4-8812-7666-b93b-6d0acff314e4"}
+{"time":"2026-11-25T07:56:41.968210236Z","level":"WARN","msg":"inbox: handler failed; will redeliver","service":"orders","consumer":"orders","event_id":"01a211b4-f2f6-7577-b135-7a495108fff2","attempt":1}
+{"time":"2026-11-25T07:56:42.97204016Z","level":"WARN","msg":"inbox: handler failed; will redeliver","service":"orders","consumer":"orders","event_id":"01a211b4-f2f6-7577-b135-7a495108fff2","attempt":2}
+{"time":"2026-11-25T07:56:48.976406936Z","level":"WARN","msg":"inbox: handler failed; will redeliver","service":"orders","consumer":"orders","event_id":"01a211b4-f2f6-7577-b135-7a495108fff2","attempt":3}
+{"time":"2026-11-25T07:57:06.980966592Z","level":"WARN","msg":"inbox: handler failed; will redeliver","service":"orders","consumer":"orders","event_id":"01a211b4-f2f6-7577-b135-7a495108fff2","attempt":4}
+{"time":"2026-11-25T07:57:43.984307869Z","level":"WARN","msg":"inbox: handler failed; will redeliver","service":"orders","consumer":"orders","event_id":"01a211b4-f2f6-7577-b135-7a495108fff2","attempt":5}
+{"time":"2026-11-25T07:58:58.988200592Z","level":"WARN","msg":"inbox: handler failed; will redeliver","service":"orders","consumer":"orders","event_id":"01a211b4-f2f6-7577-b135-7a495108fff2","attempt":6}
+{"time":"2026-11-25T07:59:05.791053465Z","level":"INFO","msg":"request","service":"orders","method":"GET","path":"/v1/exceptions","status":200,"took":3635393,"request_id":"01a211b7-283b-7413-9130-662569cdaca2"}
+{"time":"2026-11-25T07:59:05.808028602Z","level":"INFO","msg":"request","service":"orders","method":"GET","path":"/v1/projection-digests","status":200,"took":9049713,"request_id":"01a211b7-2846-75db-b6c1-4a1ce9863e73"}
+{"time":"2026-11-25T07:59:06.268822525Z","level":"INFO","msg":"request","service":"orders","method":"GET","path":"/v1/checks/01a21211-901d-7000-babc-19758f03126a","status":404,"took":2283706,"request_id":"01a211b7-2a1a-72eb-ba2b-e8e3c0081d86"}
+{"time":"2026-11-25T07:59:06.514739225Z","level":"INFO","msg":"request","service":"orders","method":"GET","path":"/v1/checks/01a21211-901d-7000-babc-19758f03126a","status":404,"took":2192438,"request_id":"01a211b7-2b10-77bf-9ef9-27778b91b454"}

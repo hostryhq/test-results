@@ -1,0 +1,10 @@
+{"time":"2026-11-25T05:04:51.654476226Z","level":"WARN","msg":"development only: repository: the database role is a superuser or has BYPASSRLS, so tenant isolation would not hold"}
+{"time":"2026-11-25T05:04:51.691120954Z","level":"INFO","msg":"gateway up","epoch":"genesis"}
+{"time":"2026-11-25T05:04:51.697444336Z","level":"INFO","msg":"hub up","wiped":false}
+soakgw up: cloud http://127.0.0.1:28104 hub http://127.0.0.1:28115 ctl http://127.0.0.1:28116 fixture /tmp/hostry-soak/official/seed2.fixture.json
+{"time":"2026-11-25T05:05:11.307401837Z","level":"INFO","msg":"hub up","wiped":false}
+{"time":"2026-11-25T05:05:14.492078357Z","level":"INFO","msg":"hub up","wiped":false}
+{"time":"2026-11-25T05:05:15.656817487Z","level":"INFO","msg":"hub up","wiped":true}
+{"time":"2026-11-25T05:07:51.688234241Z","level":"INFO","msg":"restore epoch changed: opening new cloud origin","from":"genesis","to":"soak-restore-2"}
+{"time":"2026-11-25T05:07:51.688248741Z","level":"INFO","msg":"restore epoch handled","from":"genesis","to":"soak-restore-2"}
+{"time":"2026-11-25T05:07:51.68919982Z","level":"INFO","msg":"gateway up","epoch":"soak-restore-2"}

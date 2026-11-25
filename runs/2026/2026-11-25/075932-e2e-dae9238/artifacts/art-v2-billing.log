@@ -1,0 +1,6 @@
+{"time":"2026-11-25T07:59:27.111778704Z","level":"INFO","msg":"billing listening","service":"billing","addr":"127.0.0.1:28107"}
+{"time":"2026-11-25T08:00:30.070455285Z","level":"WARN","msg":"inbox: handler failed; will redeliver","service":"billing","consumer":"billing.sync","event_id":"01a211b8-6876-7025-a4da-7c312cad1816","attempt":1}
+{"time":"2026-11-25T08:00:31.074091391Z","level":"WARN","msg":"inbox: handler failed; will redeliver","service":"billing","consumer":"billing.sync","event_id":"01a211b8-6876-7025-a4da-7c312cad1816","attempt":2}
+{"time":"2026-11-25T08:00:37.077182509Z","level":"WARN","msg":"inbox: handler failed; will redeliver","service":"billing","consumer":"billing.sync","event_id":"01a211b8-6876-7025-a4da-7c312cad1816","attempt":3}
+{"time":"2026-11-25T08:00:55.080111911Z","level":"WARN","msg":"inbox: handler failed; will redeliver","service":"billing","consumer":"billing.sync","event_id":"01a211b8-6876-7025-a4da-7c312cad1816","attempt":4}
+{"time":"2026-11-25T08:01:32.084217706Z","level":"WARN","msg":"inbox: handler failed; will redeliver","service":"billing","consumer":"billing.sync","event_id":"01a211b8-6876-7025-a4da-7c312cad1816","attempt":5}
