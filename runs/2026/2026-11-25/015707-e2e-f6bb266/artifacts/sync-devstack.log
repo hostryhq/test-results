@@ -1,0 +1,1 @@
+devstack up: cloud http://127.0.0.1:18111 hub http://127.0.0.1:18112 fixture /tmp/e2e/sync/fixture.json

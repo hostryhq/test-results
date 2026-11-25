@@ -1,0 +1,25 @@
+{
+  "suite": "unit",
+  "target": "svc-admin",
+  "commit": "67a42d35cfc07972318aa4af48cf07b3d75ae10f",
+  "environment": "local",
+  "started_at": "2026-11-25T02:10:08Z",
+  "finished_at": "2026-11-25T02:10:23Z",
+  "passed": 6,
+  "failed": 0,
+  "skipped": 0,
+  "status": "pass",
+  "baseline_compared": false,
+  "regressions": [],
+  "triggered_by": "manual",
+  "commits": {
+    "svc-admin": "67a42d35cfc07972318aa4af48cf07b3d75ae10f",
+    "go-common": "95088b54b6edd966e610bd5826d3f3009a2b4c77",
+    "go-auth": "b19b5407e3f206ad1f79a7a764a1650c65d8fcc7",
+    "api-specs": "c92ca77ecb4e8334b440256cecdbbb843049f6a0"
+  },
+  "command": "go test -race -count=1 ./...  (unit, API, contract on real service and double)",
+  "counting": "Go packages with tests (ok / FAIL); individual test counts were not collected (no -v/-json)",
+  "run_id": "021008-unit-67a42d3",
+  "report": "runs/2026/2026-11-25/021008-unit-67a42d3/report.md"
+}

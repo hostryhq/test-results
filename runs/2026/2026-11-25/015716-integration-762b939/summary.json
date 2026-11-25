@@ -1,0 +1,24 @@
+{
+  "suite": "integration",
+  "target": "svc-sync simulator",
+  "commit": "762b93999a4e76cc643afc0320328c8c25961180",
+  "environment": "local",
+  "started_at": "2026-11-25T01:57:16Z",
+  "finished_at": "2026-11-25T01:58:22Z",
+  "passed": 50,
+  "failed": 0,
+  "skipped": 0,
+  "status": "pass",
+  "baseline_compared": false,
+  "regressions": [],
+  "triggered_by": "manual",
+  "commits": {
+    "svc-sync": "762b93999a4e76cc643afc0320328c8c25961180",
+    "go-common": "95088b54b6edd966e610bd5826d3f3009a2b4c77",
+    "go-auth": "b19b5407e3f206ad1f79a7a764a1650c65d8fcc7"
+  },
+  "command": "simulate -from 1 -runs 50",
+  "note": "deterministic in-process simulation (ADR-0002 S15): partitions, crashes, hub wipes, restore epochs, key loss; not a load test",
+  "run_id": "015716-integration-762b939",
+  "report": "runs/2026/2026-11-25/015716-integration-762b939/report.md"
+}

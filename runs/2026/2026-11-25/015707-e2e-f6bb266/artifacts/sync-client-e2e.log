@@ -1,0 +1,9 @@
+
+ RUN  v5.1.1 /mnt/d/40_Projects/Ventures/hostry-repos/client-core-sync
+
+
+ Test Files  1 passed (1)
+      Tests  1 passed (1)
+   Start at  01:57:12
+   Duration  3.33s (tests 71%, import 14%, transform 11%, worker 4%)
+

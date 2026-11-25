@@ -1,0 +1,3 @@
+svc-admin 67a42d35cfc07972318aa4af48cf07b3d75ae10f built-in-place
+svc-identity 7ae4f6b01153c93734a9cf81a4358f81d06cfba5 built-in-place
+svc-tenancy 0084d7fbdcf0d8ce469852fb49b71cc2ae40bea6 built-from-archive (working tree had 1 uncommitted paths)

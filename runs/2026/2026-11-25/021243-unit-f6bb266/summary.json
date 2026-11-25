@@ -1,0 +1,21 @@
+{
+  "suite": "unit",
+  "target": "client-core (sync, worktree client-core-sync)",
+  "commit": "f6bb266773efaf6a3605439ab9c6f84083859a03",
+  "environment": "local",
+  "started_at": "2026-11-25T02:12:43Z",
+  "finished_at": "2026-11-25T02:12:56Z",
+  "passed": 115,
+  "failed": 0,
+  "skipped": 1,
+  "status": "pass",
+  "baseline_compared": false,
+  "regressions": [],
+  "triggered_by": "manual",
+  "commits": {
+    "client-core-sync": "f6bb266773efaf6a3605439ab9c6f84083859a03"
+  },
+  "command": "pnpm vitest run (the e2e file skips without SYNC_E2E_FIXTURE)",
+  "run_id": "021243-unit-f6bb266",
+  "report": "runs/2026/2026-11-25/021243-unit-f6bb266/report.md"
+}

@@ -1,0 +1,31 @@
+{
+  "suite": "load",
+  "target": "svc-identity+svc-tenancy+svc-admin (local)",
+  "commit": "be964ce443e168e164214b39289c717d0241b07e",
+  "environment": "local",
+  "started_at": "2026-11-25T01:54:49Z",
+  "finished_at": "2026-11-25T01:57:04Z",
+  "passed": 8,
+  "failed": 0,
+  "skipped": 0,
+  "status": "partial",
+  "baseline_compared": false,
+  "regressions": [],
+  "triggered_by": "manual",
+  "commits": {
+    "svc-identity": "7ae4f6b01153c93734a9cf81a4358f81d06cfba5",
+    "svc-tenancy": "0084d7fbdcf0d8ce469852fb49b71cc2ae40bea6",
+    "svc-admin": "67a42d35cfc07972318aa4af48cf07b3d75ae10f",
+    "e2e-tests": "be964ce443e168e164214b39289c717d0241b07e",
+    "infra": "c0a26f6d2977db1c259d3eefbbf57e74ed0be6cd",
+    "go-common": "95088b54b6edd966e610bd5826d3f3009a2b4c77",
+    "go-auth": "b19b5407e3f206ad1f79a7a764a1650c65d8fcc7",
+    "api-specs": "c92ca77ecb4e8334b440256cecdbbb843049f6a0"
+  },
+  "command": "E2E_LOAD=1 go test -tags e2e -run TestLoadLocalBaseline (inside scripts/run-all.sh)",
+  "note": "No stored baseline: recorded as the new local baseline, not as a pass.",
+  "new_baseline": true,
+  "request_errors": 0,
+  "run_id": "015449-load-be964ce",
+  "report": "runs/2026/2026-11-25/015449-load-be964ce/report.md"
+}

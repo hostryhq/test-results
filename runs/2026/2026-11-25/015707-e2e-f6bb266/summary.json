@@ -1,0 +1,24 @@
+{
+  "suite": "e2e",
+  "target": "client-core-sync <-> svc-sync devstack",
+  "commit": "f6bb266773efaf6a3605439ab9c6f84083859a03",
+  "environment": "local",
+  "started_at": "2026-11-25T01:57:07Z",
+  "finished_at": "2026-11-25T01:57:15Z",
+  "passed": 1,
+  "failed": 0,
+  "skipped": 0,
+  "status": "pass",
+  "baseline_compared": false,
+  "regressions": [],
+  "triggered_by": "manual",
+  "commits": {
+    "client-core-sync": "f6bb266773efaf6a3605439ab9c6f84083859a03",
+    "svc-sync": "762b93999a4e76cc643afc0320328c8c25961180",
+    "go-common": "95088b54b6edd966e610bd5826d3f3009a2b4c77",
+    "go-auth": "b19b5407e3f206ad1f79a7a764a1650c65d8fcc7"
+  },
+  "command": "svc-sync: go run ./cmd/devstack (built; -cloud 127.0.0.1:18111 -hub 127.0.0.1:18112); client-core-sync: SYNC_E2E_FIXTURE=... pnpm vitest run src/sync/e2e.go.test.ts",
+  "run_id": "015707-e2e-f6bb266",
+  "report": "runs/2026/2026-11-25/015707-e2e-f6bb266/report.md"
+}

@@ -1,0 +1,22 @@
+{
+  "suite": "integration",
+  "target": "svc-tenancy",
+  "commit": "0084d7fbdcf0d8ce469852fb49b71cc2ae40bea6",
+  "environment": "local",
+  "started_at": "2026-11-25T02:09:54Z",
+  "finished_at": "2026-11-25T02:10:08Z",
+  "passed": 6,
+  "failed": 0,
+  "skipped": 0,
+  "status": "pass",
+  "baseline_compared": false,
+  "regressions": [],
+  "triggered_by": "manual",
+  "commits": {
+    "svc-tenancy": "0084d7fbdcf0d8ce469852fb49b71cc2ae40bea6"
+  },
+  "command": "GOWORK=off TENANCY_TEST_PG_ADMIN_DSN=... go test -race -count=1 -tags integration ./...  (real Postgres 17: contract, isolation, roles, registry)",
+  "counting": "Go packages with tests (ok / FAIL); individual test counts were not collected (no -v/-json)",
+  "run_id": "020954-integration-0084d7f",
+  "report": "runs/2026/2026-11-25/020954-integration-0084d7f/report.md"
+}
