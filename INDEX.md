@@ -2,6 +2,7 @@
 
 One line per run, newest first. Append-only: a wrong record is corrected by a new run entry that references it.
 
+- 2026-11-25 133929-e2e-7e08fc8 | e2e | soak soak seed 1 settle (run 5) (S6 approval window waited (13 min); real cmd/hub) | fail | pass 18 fail 4 skip 1 | R11 soak T1-T13 | runs/2026/2026-11-25/133929-e2e-7e08fc8/report.md
 - 2026-11-25 133730-e2e-7e08fc8 | e2e | soak soak seed 4 print (run 5) (number_at print; real cmd/hub) | fail | pass 14 fail 7 skip 2 | R11 soak T1-T13 | runs/2026/2026-11-25/133730-e2e-7e08fc8/report.md
 - 2026-11-25 133534-e2e-7e08fc8 | e2e | soak soak seed 3 settle (run 5) (real cmd/hub) | fail | pass 17 fail 4 skip 2 | R11 soak T1-T13 | runs/2026/2026-11-25/133534-e2e-7e08fc8/report.md
 - 2026-11-25 133251-e2e-7e08fc8 | e2e | soak soak seed 2 settle (run 5) (cloud restore (X3); real cmd/hub) | fail | pass 18 fail 4 skip 1 | R11 soak T1-T13 | runs/2026/2026-11-25/133251-e2e-7e08fc8/report.md
