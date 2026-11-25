@@ -1,0 +1,97 @@
+{
+  "run_id": "094906-e2e-496d338",
+  "suite": "e2e",
+  "target": "ADR-0014 R11 simulated trading-day soak (soak seed 4 print; run 3: products do session, approval, brand, known_tenants; no harness workaround for them)",
+  "commit": "496d338d854e2fd035e48665d4ae13c4197cb5ee",
+  "environment": "local",
+  "started_at": "2026-11-25T09:49:06Z",
+  "finished_at": "2026-11-25T09:50:51Z",
+  "passed": 12,
+  "failed": 2,
+  "skipped": 2,
+  "status": "fail",
+  "baseline_compared": false,
+  "regressions": [],
+  "triggered_by": "manual",
+  "commits": {
+    "e2e-tests": "496d338d854e2fd035e48665d4ae13c4197cb5ee",
+    "infra": {
+      "branch": "feat/phase2-local-dev",
+      "sha": "1eb6fb3",
+      "note": "up-full.sh with the real-directory environment of sync; unchanged this run"
+    },
+    "svc-identity": {
+      "branch": "feat/phase2-identity",
+      "sha": "6f0c495"
+    },
+    "svc-tenancy": {
+      "branch": "feat/phase2-tenancy",
+      "sha": "f5629bc"
+    },
+    "svc-admin": {
+      "branch": "feat/phase2-admin",
+      "sha": "24444d3"
+    },
+    "svc-catalog": {
+      "branch": "feat/phase2-catalog",
+      "sha": "b319d77"
+    },
+    "svc-orders": {
+      "branch": "feat/phase2-orders",
+      "sha": "03d75b9"
+    },
+    "svc-billing": {
+      "branch": "feat/phase2-billing",
+      "sha": "0db7222",
+      "note": "as pinned, no overlay"
+    },
+    "svc-sync": {
+      "branch": "feat/phase2-sync",
+      "sha": "569c19b",
+      "note": "cmd/gateway with SYNC_DIRECTORY=identity, no overlay; the LAN hub runs in soakgw"
+    },
+    "client-core": {
+      "branch": "feat/phase2-integration",
+      "sha": "1e26251"
+    },
+    "app-restaurant": {
+      "branch": "feat/phase2-app",
+      "sha": "e7cc713"
+    },
+    "go-common": {
+      "branch": "feat/phase2-libs",
+      "sha": "88a6ae9"
+    },
+    "go-auth": {
+      "branch": "feat/phase2-auth",
+      "sha": "94f1970"
+    },
+    "api-specs-p2": {
+      "branch": "feat/phase2-specs",
+      "sha": "1c94c67"
+    }
+  },
+  "command": "soak/scripts/run-all.sh <work> r4:4:print:0",
+  "seed": 4,
+  "number_at": "print",
+  "counts_are": "claims (T1 to T13 plus X1 no duplicate ops, X2 erasure, X3 cloud restore); skipped = not run",
+  "claims": {
+    "T1": "pass",
+    "T2": "pass",
+    "T3": "pass",
+    "T4": "pass",
+    "T5": "pass",
+    "T6": "pass",
+    "T7": "pass",
+    "T8": "pass",
+    "T9": "fail",
+    "T10": "not_run",
+    "T11": "fail",
+    "T12": "pass",
+    "T13": "pass",
+    "X1": "pass",
+    "X3": "not_run",
+    "X2": "pass"
+  },
+  "report": "runs/2026/2026-11-25/094906-e2e-496d338/report.md"
+}

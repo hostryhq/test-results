@@ -2,6 +2,10 @@
 
 One line per run, newest first. Append-only: a wrong record is corrected by a new run entry that references it.
 
+- 2026-11-25 094906-e2e-496d338 | e2e | soak soak seed 4 print (run 3: products do session, approval, brand, known_tenants; no harness workaround for them) | fail | pass 12 fail 2 skip 2 | R11 soak T1-T13 | runs/2026/2026-11-25/094906-e2e-496d338/report.md
+- 2026-11-25 094625-e2e-496d338 | e2e | soak soak seed 2 settle with a cloud restore (run 3: products do session, approval, brand, known_tenants; no harness workaround for them) | fail | pass 13 fail 2 skip 1 | R11 soak T1-T13 | runs/2026/2026-11-25/094625-e2e-496d338/report.md
+- 2026-11-25 094417-e2e-496d338 | e2e | soak soak seed 3 settle (run 3: products do session, approval, brand, known_tenants; no harness workaround for them) | fail | pass 12 fail 2 skip 2 | R11 soak T1-T13 | runs/2026/2026-11-25/094417-e2e-496d338/report.md
+- 2026-11-25 094208-e2e-496d338 | e2e | soak soak seed 1 settle (run 3: products do session, approval, brand, known_tenants; no harness workaround for them) | fail | pass 12 fail 2 skip 2 | R11 soak T1-T13 | runs/2026/2026-11-25/094208-e2e-496d338/report.md
 - 2026-11-25 075932-e2e-dae9238 | e2e | soak soak seed 1 settle (VARIANT cashier role as the app templates have it: SOAK_CASHIER_STRICT=1 (override permissions held by the manager only)) | fail | pass 5 fail 9 skip 2 | R11 soak T1-T13 | runs/2026/2026-11-25/075932-e2e-dae9238/report.md
 - 2026-11-25 075616-e2e-dae9238 | e2e | soak soak seed 1 settle (VARIANT app as it is: SOAK_NO_SESSION_RECORD=1 (no session or approval record, no device session for the KDS)) | fail | pass 5 fail 9 skip 2 | R11 soak T1-T13 | runs/2026/2026-11-25/075616-e2e-dae9238/report.md
 - 2026-11-25 075401-e2e-8e8478a | e2e | soak soak seed 4 print (real identity directory, harness additions listed in the report) | fail | pass 10 fail 4 skip 2 | R11 soak T1-T13 | runs/2026/2026-11-25/075401-e2e-8e8478a/report.md

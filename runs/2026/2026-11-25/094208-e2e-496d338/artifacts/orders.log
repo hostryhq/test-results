@@ -1,0 +1,6 @@
+{"time":"2026-11-25T09:42:04.058353485Z","level":"INFO","msg":"orders listening","service":"orders","addr":"127.0.0.1:28106","environment":"dev"}
+{"time":"2026-11-25T09:42:04.978883631Z","level":"INFO","msg":"request","service":"orders","method":"GET","path":"/healthz","status":200,"took":42351,"request_id":"01a21215-71b2-73b2-b74f-c300a186363f"}
+{"time":"2026-11-25T09:43:49.36525484Z","level":"INFO","msg":"request","service":"orders","method":"GET","path":"/v1/exceptions","status":200,"took":2732446,"request_id":"01a21217-0972-70f2-a031-09f67ea7c25e"}
+{"time":"2026-11-25T09:43:49.39975591Z","level":"INFO","msg":"request","service":"orders","method":"GET","path":"/v1/projection-digests","status":200,"took":20136726,"request_id":"01a21217-0983-7110-9a93-b4b7769346e6"}
+{"time":"2026-11-25T09:43:49.995179763Z","level":"INFO","msg":"request","service":"orders","method":"GET","path":"/v1/checks/01a21272-a1b6-7000-a565-afd2cd393a99","status":200,"took":5945124,"request_id":"01a21217-0be5-73c9-af94-2449b1598b93"}
+{"time":"2026-11-25T09:43:50.253435269Z","level":"INFO","msg":"request","service":"orders","method":"GET","path":"/v1/checks/01a21272-a1b6-7000-a565-afd2cd393a99","status":200,"took":5653102,"request_id":"01a21217-0ce7-733d-9e98-3cd1b0a400d7"}
