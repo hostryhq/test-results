@@ -1,0 +1,104 @@
+{
+  "run_id": "133251-e2e-7e08fc8",
+  "suite": "e2e",
+  "target": "ADR-0014 R11 simulated trading-day soak (soak seed 2 settle (run 5); cloud restore (X3); real cmd/hub)",
+  "commit": "7e08fc8",
+  "environment": "local",
+  "started_at": "2026-11-25T13:32:51Z",
+  "finished_at": "2026-11-25T13:35:34Z",
+  "passed": 18,
+  "failed": 4,
+  "skipped": 1,
+  "status": "fail",
+  "baseline_compared": false,
+  "regressions": [],
+  "triggered_by": "manual",
+  "commits": {
+    "e2e-tests": "7e08fc8",
+    "e2e-tests (harness)": {
+      "branch": "feat/phase2-soak",
+      "sha": "7e08fc8",
+      "note": "real cmd/hub, node LAN channel"
+    },
+    "svc-identity": {
+      "branch": "",
+      "sha": "d51e743"
+    },
+    "svc-tenancy": {
+      "branch": "",
+      "sha": "33e2db4"
+    },
+    "svc-billing": {
+      "branch": "",
+      "sha": "fc78137"
+    },
+    "svc-orders": {
+      "branch": "",
+      "sha": "6bfa33d"
+    },
+    "svc-catalog": {
+      "branch": "",
+      "sha": "fcf4b93"
+    },
+    "svc-admin": {
+      "branch": "",
+      "sha": "24444d3"
+    },
+    "svc-sync": {
+      "branch": "",
+      "sha": "e85d80d",
+      "note": "cmd/gateway and cmd/hub"
+    },
+    "client-core": {
+      "branch": "feat/phase2-integration",
+      "sha": "45eaa21"
+    },
+    "app-restaurant": {
+      "branch": "",
+      "sha": "95f9aa1"
+    },
+    "api-specs-p2": {
+      "branch": "",
+      "sha": "17de74f"
+    },
+    "go-common": {
+      "branch": "",
+      "sha": "88a6ae9"
+    },
+    "infra": {
+      "branch": "feat/phase2-local-dev",
+      "sha": "1eb6fb3",
+      "note": "unchanged"
+    }
+  },
+  "command": "soak/scripts/run-one.sh (run 5: real cmd/hub, node LAN channel, tills store protected; soakgw = internet switch, wall clock, tokens, epoch)",
+  "seed": 2,
+  "number_at": "settle",
+  "counts_are": "claims (T1 to T13 plus X1 no duplicate ops, X2 erasure, X3 cloud restore); skipped = not run",
+  "claims": {
+    "T1": "pass",
+    "T2": "pass",
+    "T3": "pass",
+    "T4": "pass",
+    "T5": "pass",
+    "T6": "fail",
+    "T7": "pass",
+    "T8": "pass",
+    "T9": "pass",
+    "T10": "pass",
+    "T11": "pass",
+    "T12": "pass",
+    "T13": "fail",
+    "X1": "pass",
+    "X3": "pass",
+    "X2": "pass",
+    "S1": "pass",
+    "S2": "fail",
+    "S3": "pass",
+    "S4": "pass",
+    "S5": "pass",
+    "S6": "not_run",
+    "S7": "fail"
+  },
+  "report": "runs/2026/2026-11-25/133251-e2e-7e08fc8/report.md"
+}

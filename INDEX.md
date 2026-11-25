@@ -2,6 +2,9 @@
 
 One line per run, newest first. Append-only: a wrong record is corrected by a new run entry that references it.
 
+- 2026-11-25 133730-e2e-7e08fc8 | e2e | soak soak seed 4 print (run 5) (number_at print; real cmd/hub) | fail | pass 14 fail 7 skip 2 | R11 soak T1-T13 | runs/2026/2026-11-25/133730-e2e-7e08fc8/report.md
+- 2026-11-25 133534-e2e-7e08fc8 | e2e | soak soak seed 3 settle (run 5) (real cmd/hub) | fail | pass 17 fail 4 skip 2 | R11 soak T1-T13 | runs/2026/2026-11-25/133534-e2e-7e08fc8/report.md
+- 2026-11-25 133251-e2e-7e08fc8 | e2e | soak soak seed 2 settle (run 5) (cloud restore (X3); real cmd/hub) | fail | pass 18 fail 4 skip 1 | R11 soak T1-T13 | runs/2026/2026-11-25/133251-e2e-7e08fc8/report.md
 - 2026-11-25 103555-e2e-c2fc640 | e2e | soak run 4: soak seed 4 print (run 4 (T10 scenario, no tenant-stream rewrite)) | partial | pass 15 fail 0 skip 1 | R11 soak T1-T13 | runs/2026/2026-11-25/103555-e2e-c2fc640/report.md
 - 2026-11-25 103356-e2e-c2fc640 | e2e | soak run 4: soak seed 3 settle (run 4 (T10 scenario, no tenant-stream rewrite)) | partial | pass 15 fail 0 skip 1 | R11 soak T1-T13 | runs/2026/2026-11-25/103356-e2e-c2fc640/report.md
 - 2026-11-25 103128-e2e-c2fc640 | e2e | soak run 4: soak seed 2 settle, cloud restore (run 4 (T10 scenario, no tenant-stream rewrite)) | pass | pass 16 fail 0 skip 0 | R11 soak T1-T13 | runs/2026/2026-11-25/103128-e2e-c2fc640/report.md

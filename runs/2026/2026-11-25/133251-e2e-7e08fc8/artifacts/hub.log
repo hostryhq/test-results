@@ -1,0 +1,20 @@
+{"time":"2026-11-25T13:33:09.628591871Z","level":"WARN","msg":"pack refresh at start failed; running on the stored pack","err":"identity answered 503 "}
+{"time":"2026-11-25T13:33:09.629585726Z","level":"WARN","msg":"hub upstream sync failed","err":"identity answered 503 "}
+{"time":"2026-11-25T13:33:09.650838938Z","level":"INFO","msg":"hub listening","addr":"127.0.0.1:28115","transport":"tls1.3"}
+2026/11/25 13:33:10 http: TLS handshake error from 127.0.0.1:45559: EOF
+{"time":"2026-11-25T13:33:23.187178494Z","level":"WARN","msg":"hub upstream sync failed","err":"sync: upstream answered 503"}
+{"time":"2026-11-25T13:33:27.391435781Z","level":"WARN","msg":"hub upstream sync failed","err":"sync: upstream answered 503"}
+{"time":"2026-11-25T13:33:36.330292491Z","level":"WARN","msg":"pack refresh at start failed; running on the stored pack","err":"identity answered 503 "}
+{"time":"2026-11-25T13:33:36.33138769Z","level":"WARN","msg":"hub upstream sync failed","err":"identity answered 503 "}
+{"time":"2026-11-25T13:33:36.351804933Z","level":"INFO","msg":"hub listening","addr":"127.0.0.1:28115","transport":"tls1.3"}
+2026/11/25 13:33:36 http: TLS handshake error from 127.0.0.1:43585: EOF
+{"time":"2026-11-25T13:33:41.261029818Z","level":"WARN","msg":"hub upstream sync failed","err":"identity answered 503 "}
+{"time":"2026-11-25T13:33:43.422972912Z","level":"WARN","msg":"pack refresh at start failed; running on the stored pack","err":"identity answered 503 "}
+{"time":"2026-11-25T13:33:43.424076421Z","level":"WARN","msg":"hub upstream sync failed","err":"identity answered 503 "}
+{"time":"2026-11-25T13:33:43.445233844Z","level":"INFO","msg":"hub listening","addr":"127.0.0.1:28115","transport":"tls1.3"}
+2026/11/25 13:33:44 http: TLS handshake error from 127.0.0.1:47311: EOF
+{"time":"2026-11-25T13:33:46.714728292Z","level":"WARN","msg":"pack refresh at start failed; running on the stored pack","err":"identity answered 503 "}
+{"time":"2026-11-25T13:33:46.715753673Z","level":"WARN","msg":"hub upstream sync failed","err":"identity answered 503 "}
+{"time":"2026-11-25T13:33:46.736864434Z","level":"INFO","msg":"hub listening","addr":"127.0.0.1:28115","transport":"tls1.3"}
+2026/11/25 13:33:46 http: TLS handshake error from 127.0.0.1:43399: EOF
+{"time":"2026-11-25T13:33:51.515524844Z","level":"WARN","msg":"hub upstream sync failed","err":"identity answered 503 "}
