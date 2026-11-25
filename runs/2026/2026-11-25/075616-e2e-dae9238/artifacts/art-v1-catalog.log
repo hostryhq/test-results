@@ -1,0 +1,7 @@
+{"time":"2026-11-25T07:56:13.743573168Z","level":"INFO","msg":"catalog listening","service":"catalog","addr":"127.0.0.1:28105"}
+{"time":"2026-11-25T07:56:41.967978867Z","level":"WARN","msg":"inbox: handler failed; will redeliver","service":"catalog","consumer":"catalog:sync","event_id":"01a211b4-f2f6-7577-b135-7a495108fff2","attempt":1}
+{"time":"2026-11-25T07:56:42.972010789Z","level":"WARN","msg":"inbox: handler failed; will redeliver","service":"catalog","consumer":"catalog:sync","event_id":"01a211b4-f2f6-7577-b135-7a495108fff2","attempt":2}
+{"time":"2026-11-25T07:56:48.976871642Z","level":"WARN","msg":"inbox: handler failed; will redeliver","service":"catalog","consumer":"catalog:sync","event_id":"01a211b4-f2f6-7577-b135-7a495108fff2","attempt":3}
+{"time":"2026-11-25T07:57:06.981375276Z","level":"WARN","msg":"inbox: handler failed; will redeliver","service":"catalog","consumer":"catalog:sync","event_id":"01a211b4-f2f6-7577-b135-7a495108fff2","attempt":4}
+{"time":"2026-11-25T07:57:43.985132243Z","level":"WARN","msg":"inbox: handler failed; will redeliver","service":"catalog","consumer":"catalog:sync","event_id":"01a211b4-f2f6-7577-b135-7a495108fff2","attempt":5}
+{"time":"2026-11-25T07:58:58.98856983Z","level":"WARN","msg":"inbox: handler failed; will redeliver","service":"catalog","consumer":"catalog:sync","event_id":"01a211b4-f2f6-7577-b135-7a495108fff2","attempt":6}

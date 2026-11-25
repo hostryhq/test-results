@@ -1,0 +1,97 @@
+{
+  "run_id": "075616-e2e-dae9238",
+  "suite": "e2e",
+  "target": "ADR-0014 R11 simulated trading-day soak (soak seed 1 settle; VARIANT app as it is: SOAK_NO_SESSION_RECORD=1 (no session or approval record, no device session for the KDS))",
+  "commit": "dae92382e37d00c4ac4e733a9da8e63690fb8a78",
+  "environment": "local",
+  "started_at": "2026-11-25T07:56:16Z",
+  "finished_at": "2026-11-25T07:59:08Z",
+  "passed": 5,
+  "failed": 9,
+  "skipped": 2,
+  "status": "fail",
+  "baseline_compared": false,
+  "regressions": [],
+  "triggered_by": "manual",
+  "commits": {
+    "e2e-tests": "dae92382e37d00c4ac4e733a9da8e63690fb8a78",
+    "infra": {
+      "branch": "feat/phase2-local-dev",
+      "sha": "5f784f4",
+      "note": "up-full.sh sets the real-directory environment of sync, adds stop|start|restart|rebuild"
+    },
+    "svc-identity": {
+      "branch": "feat/phase2-*",
+      "sha": "2ba5adc"
+    },
+    "svc-tenancy": {
+      "branch": "feat/phase2-*",
+      "sha": "3792f07"
+    },
+    "svc-admin": {
+      "branch": "feat/phase2-*",
+      "sha": "24444d3"
+    },
+    "svc-catalog": {
+      "branch": "feat/phase2-*",
+      "sha": "38e7bc1"
+    },
+    "svc-orders": {
+      "branch": "feat/phase2-*",
+      "sha": "809fffb"
+    },
+    "svc-billing": {
+      "branch": "feat/phase2-*",
+      "sha": "26676cf",
+      "note": "as pinned, no overlay"
+    },
+    "svc-sync": {
+      "branch": "feat/phase2-sync",
+      "sha": "f013d8b",
+      "note": "cmd/gateway with SYNC_DIRECTORY=identity, built with soak/patches/svc-sync-credential-brand.patch through go build -overlay (checkout untouched); the hub runs in soakgw"
+    },
+    "client-core": {
+      "branch": "feat/phase2-integration",
+      "sha": "413b5b4"
+    },
+    "app-restaurant": {
+      "branch": "feat/phase2-app",
+      "sha": "09bf2db"
+    },
+    "go-common": {
+      "branch": "feat/phase2-libs",
+      "sha": "a170f64"
+    },
+    "go-auth": {
+      "branch": "feat/phase2-auth",
+      "sha": "94f1970"
+    },
+    "api-specs-p2": {
+      "branch": "feat/phase2-specs",
+      "sha": "6e63014"
+    }
+  },
+  "command": "SOAK_NO_SESSION_RECORD=1 soak/scripts/run-all.sh <work> v1:1:settle:0 (fresh stack: stack.sh down, up with SOAK_SYNC_PATCH=1; run-one.sh: soak-onboard, soakgw, vitest src/soak.soak.ts)",
+  "seed": 1,
+  "number_at": "settle",
+  "counts_are": "claims (T1 to T13 plus X1 no duplicate ops, X2 erasure, X3 cloud restore); skipped = not run",
+  "claims": {
+    "T1": "fail",
+    "T2": "fail",
+    "T3": "fail",
+    "T4": "fail",
+    "T5": "pass",
+    "T6": "pass",
+    "T7": "fail",
+    "T8": "pass",
+    "T9": "fail",
+    "T10": "not_run",
+    "T11": "fail",
+    "T12": "fail",
+    "T13": "pass",
+    "X1": "pass",
+    "X3": "not_run",
+    "X2": "fail"
+  },
+  "report": "runs/2026/2026-11-25/075616-e2e-dae9238/report.md"
+}
