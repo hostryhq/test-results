@@ -2,6 +2,7 @@
 
 One line per run, newest first. Append-only: a wrong record is corrected by a new run entry that references it.
 
+- 2026-11-25 051502-e2e-1b14369 | e2e | soak seed 1 settle (svc-billing AS-IS (as-is billing, unpatched)) | fail | pass 5 fail 9 skip 2 | R11 soak T1-T13 | runs/2026/2026-11-25/051502-e2e-1b14369/report.md
 - 2026-11-25 051055-e2e-1b14369 | e2e | soak seed 4 print (svc-billing patched with one line (go build overlay)) | fail | pass 6 fail 8 skip 2 | R11 soak T1-T13 | runs/2026/2026-11-25/051055-e2e-1b14369/report.md
 - 2026-11-25 050803-e2e-1b14369 | e2e | soak seed 3 settle (svc-billing patched with one line (go build overlay)) | fail | pass 7 fail 7 skip 2 | R11 soak T1-T13 | runs/2026/2026-11-25/050803-e2e-1b14369/report.md
 - 2026-11-25 050451-e2e-1b14369 | e2e | soak seed 2 settle with cloud restore (svc-billing patched with one line (go build overlay)) | fail | pass 8 fail 7 skip 1 | R11 soak T1-T13 | runs/2026/2026-11-25/050451-e2e-1b14369/report.md
