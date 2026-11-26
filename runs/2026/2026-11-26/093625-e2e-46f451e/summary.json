@@ -1,0 +1,100 @@
+{
+  "run_id": "093625-e2e-46f451e",
+  "suite": "e2e",
+  "target": "ADR-0014 R11 simulated trading-day soak (soak seed 2 settle (run 6); cloud restore (X3); real cmd/hub; hub dev clock)",
+  "commit": "46f451e",
+  "environment": "local",
+  "started_at": "2026-11-26T09:36:25Z",
+  "finished_at": "2026-11-26T09:39:13Z",
+  "passed": 22,
+  "failed": 0,
+  "skipped": 1,
+  "status": "partial",
+  "baseline_compared": false,
+  "regressions": [],
+  "triggered_by": "manual",
+  "commits": {
+    "svc-identity": {
+      "branch": "feat/phase2-identity",
+      "sha": "d51e743"
+    },
+    "svc-tenancy": {
+      "branch": "feat/phase2-tenancy",
+      "sha": "33e2db4"
+    },
+    "svc-billing": {
+      "branch": "feat/phase2-billing",
+      "sha": "9b8d6fa"
+    },
+    "svc-orders": {
+      "branch": "feat/phase2-orders",
+      "sha": "6bfa33d"
+    },
+    "svc-catalog": {
+      "branch": "feat/phase2-catalog",
+      "sha": "fcf4b93"
+    },
+    "svc-admin": {
+      "branch": "feat/phase2-admin",
+      "sha": "24444d3"
+    },
+    "svc-sync": {
+      "branch": "feat/phase2-sync",
+      "sha": "c0499fa"
+    },
+    "client-core": {
+      "branch": "feat/phase2-integration",
+      "sha": "a74d521"
+    },
+    "app-restaurant": {
+      "branch": "feat/phase2-app",
+      "sha": "3b80cb6"
+    },
+    "api-specs-p2": {
+      "branch": "feat/phase2-specs",
+      "sha": "17de74f"
+    },
+    "go-common": {
+      "branch": "feat/phase2-libs",
+      "sha": "88a6ae9"
+    },
+    "infra": {
+      "branch": "feat/phase2-local-dev",
+      "sha": "1eb6fb3"
+    },
+    "e2e-tests": {
+      "branch": "feat/phase2-soak",
+      "sha": "46f451e"
+    }
+  },
+  "command": "soak/scripts/run-all.sh r2:2:settle:1 (work dir /tmp/hostry-soak/w6)",
+  "seed": 2,
+  "number_at": "settle",
+  "counts_are": "claims (T1 to T13, X1 no duplicate ops, X2 erasure, X3 cloud restore, S1 to S7 review scenarios); skipped = not run",
+  "claims": {
+    "T1": "pass",
+    "T2": "pass",
+    "T3": "pass",
+    "T4": "pass",
+    "T5": "pass",
+    "T6": "pass",
+    "T7": "pass",
+    "T8": "pass",
+    "T9": "pass",
+    "T10": "pass",
+    "T11": "pass",
+    "T12": "pass",
+    "T13": "pass",
+    "X1": "pass",
+    "X3": "pass",
+    "X2": "pass",
+    "S1": "pass",
+    "S2": "pass",
+    "S3": "pass",
+    "S4": "pass",
+    "S5": "pass",
+    "S6": "not_run",
+    "S7": "pass"
+  },
+  "report": "runs/2026/2026-11-26/093625-e2e-46f451e/report.md"
+}

@@ -1,0 +1,24 @@
+{"time":"2026-11-26T09:36:39.130077375Z","level":"WARN","msg":"DEV CLOCK is on: the hub clock can be moved at /dev/clock; dev, test and ci only","addr":"127.0.0.1:29115"}
+{"time":"2026-11-26T09:36:39.133782338Z","level":"WARN","msg":"pack refresh at start failed; running on the stored pack","err":"identity answered 503 "}
+{"time":"2026-11-26T09:36:39.134681346Z","level":"WARN","msg":"hub upstream sync failed","err":"identity answered 503 "}
+{"time":"2026-11-26T09:36:39.140855093Z","level":"INFO","msg":"hub listening","addr":"127.0.0.1:28115","transport":"tls1.3"}
+2026/11/26 09:36:40 http: TLS handshake error from 127.0.0.1:60773: EOF
+{"time":"2026-11-26T09:36:52.381829698Z","level":"WARN","msg":"hub upstream sync failed","err":"sync: upstream answered 503"}
+{"time":"2026-11-26T09:36:56.713808832Z","level":"WARN","msg":"hub upstream sync failed","err":"sync: upstream answered 503"}
+{"time":"2026-11-26T09:37:06.001727914Z","level":"WARN","msg":"DEV CLOCK is on: the hub clock can be moved at /dev/clock; dev, test and ci only","addr":"127.0.0.1:29115"}
+{"time":"2026-11-26T09:37:06.015780038Z","level":"WARN","msg":"pack refresh at start failed; running on the stored pack","err":"identity answered 503 "}
+{"time":"2026-11-26T09:37:06.016736696Z","level":"INFO","msg":"hub listening","addr":"127.0.0.1:28115","transport":"tls1.3"}
+{"time":"2026-11-26T09:37:06.016764208Z","level":"WARN","msg":"hub upstream sync failed","err":"identity answered 503 "}
+2026/11/26 09:37:06 http: TLS handshake error from 127.0.0.1:59475: EOF
+{"time":"2026-11-26T09:37:10.374989322Z","level":"WARN","msg":"hub upstream sync failed","err":"identity answered 503 "}
+{"time":"2026-11-26T09:37:13.040126663Z","level":"WARN","msg":"DEV CLOCK is on: the hub clock can be moved at /dev/clock; dev, test and ci only","addr":"127.0.0.1:29115"}
+{"time":"2026-11-26T09:37:13.054944069Z","level":"WARN","msg":"pack refresh at start failed; running on the stored pack","err":"identity answered 503 "}
+{"time":"2026-11-26T09:37:13.056028799Z","level":"INFO","msg":"hub listening","addr":"127.0.0.1:28115","transport":"tls1.3"}
+{"time":"2026-11-26T09:37:13.056016128Z","level":"WARN","msg":"hub upstream sync failed","err":"identity answered 503 "}
+2026/11/26 09:37:13 http: TLS handshake error from 127.0.0.1:58435: EOF
+{"time":"2026-11-26T09:37:15.601547121Z","level":"WARN","msg":"DEV CLOCK is on: the hub clock can be moved at /dev/clock; dev, test and ci only","addr":"127.0.0.1:29115"}
+{"time":"2026-11-26T09:37:15.604763655Z","level":"WARN","msg":"pack refresh at start failed; running on the stored pack","err":"identity answered 503 "}
+{"time":"2026-11-26T09:37:15.605734418Z","level":"WARN","msg":"hub upstream sync failed","err":"identity answered 503 "}
+{"time":"2026-11-26T09:37:15.611797498Z","level":"INFO","msg":"hub listening","addr":"127.0.0.1:28115","transport":"tls1.3"}
+2026/11/26 09:37:15 http: TLS handshake error from 127.0.0.1:58661: EOF
+{"time":"2026-11-26T09:37:20.220622675Z","level":"WARN","msg":"hub upstream sync failed","err":"identity answered 503 "}

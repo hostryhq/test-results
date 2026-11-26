@@ -2,6 +2,9 @@
 
 One line per run, newest first. Append-only: a wrong record is corrected by a new run entry that references it.
 
+- 2026-11-26 094227-e2e-46f451e | e2e | soak soak seed 4 print (run 6) (number_at=print (M5); real cmd/hub; hub dev clock) | partial | pass 21 fail 0 skip 2 | R11 soak T1-T13, X1-X3, S1-S7 | runs/2026/2026-11-26/094227-e2e-46f451e/report.md
+- 2026-11-26 093936-e2e-46f451e | e2e | soak soak seed 3 settle (run 6) (real cmd/hub; hub dev clock) | partial | pass 21 fail 0 skip 2 | R11 soak T1-T13, X1-X3, S1-S7 | runs/2026/2026-11-26/093936-e2e-46f451e/report.md
+- 2026-11-26 093625-e2e-46f451e | e2e | soak soak seed 2 settle (run 6) (cloud restore (X3); real cmd/hub; hub dev clock) | partial | pass 22 fail 0 skip 1 | R11 soak T1-T13, X1-X3, S1-S7 | runs/2026/2026-11-26/093625-e2e-46f451e/report.md
 - 2026-11-25 133929-e2e-7e08fc8 | e2e | soak soak seed 1 settle (run 5) (S6 approval window waited (13 min); real cmd/hub) | fail | pass 18 fail 4 skip 1 | R11 soak T1-T13 | runs/2026/2026-11-25/133929-e2e-7e08fc8/report.md
 - 2026-11-25 133730-e2e-7e08fc8 | e2e | soak soak seed 4 print (run 5) (number_at print; real cmd/hub) | fail | pass 14 fail 7 skip 2 | R11 soak T1-T13 | runs/2026/2026-11-25/133730-e2e-7e08fc8/report.md
 - 2026-11-25 133534-e2e-7e08fc8 | e2e | soak soak seed 3 settle (run 5) (real cmd/hub) | fail | pass 17 fail 4 skip 2 | R11 soak T1-T13 | runs/2026/2026-11-25/133534-e2e-7e08fc8/report.md
